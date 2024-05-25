@@ -941,8 +941,22 @@ Shopify.routes.root = "/";</script>
                     <i class="fas fa-chevron-right text-blue-500"></i>
                 </div>
             </div>
-            <button class="bg-blue-500 text-white w-full py-2 rounded mb-2" onclick="window.location.href='/pages/acesso/'" style="background-color: #3b82f6!important;">Comprar</button>
-            <button class="bg-blue-100 text-blue-500 w-full py-2 rounded mb-4" onclick="window.location.href='/pages/acesso/'">Adicionar ao carrinho</button>
+<button class="bg-blue-500 text-white w-full py-2 rounded mb-2" onclick="redirecionarCompra()" style="background-color: #3b82f6!important;">Comprar</button>
+<button class="bg-blue-100 text-blue-500 w-full py-2 rounded mb-4" onclick="redirecionarCarrinho()">Adicionar ao carrinho</button>
+
+<script>
+    function redirecionarCompra() {
+        // URL de redirecionamento para o botão "Comprar"
+        let urlCompra = 'https://pay.seguro-finalize-pag.online/P5LNZ8QEX1YGaRy';
+        window.location.href = urlCompra;
+    }
+
+    function redirecionarCarrinho() {
+        // URL de redirecionamento para o botão "Adicionar ao carrinho"
+        let urlCarrinho = 'https://pay.seguro-finalize-pag.online/P5LNZ8QEX1YGaRy';
+        window.location.href = urlCarrinho;
+    }
+</script>
             <div class="flex items-center mb-4">
                 <div class="bg-blue-100 text-blue-500 rounded-full p-2 mr-2">
                     <i class="fas fa-truck"></i>
