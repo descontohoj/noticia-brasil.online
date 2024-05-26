@@ -9,7 +9,17 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-... (hash) ..." crossorigin="anonymous" />
 
-
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -988,17 +998,6 @@ Shopify.routes.root = "/";</script>
 
     // Colocar a data formatada no elemento HTML
     document.getElementById('dataEntrega').innerText = dataFormatada;
-</script>
-<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
 </script>
             </div>
         </div>
