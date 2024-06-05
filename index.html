@@ -1,1100 +1,1321 @@
+<!DOCTYPE html><html lang="pt"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loja Oboticário</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="">
+    <base href="">
+    <link rel="canonical" href="/">
+    <!--  -->
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16">
+    <meta name="application-name" content="�&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <!-- page description -->
+    <meta name="description" content="Oboticário é a maior rede de Chocolates Finos do mundo. Descubra em nossa loja virtual o universo dos melhores Chocolates: La Creme, Bendito Cacao, Trufas deliciosas, Linha de Chocolates Kids, Tabletes, Kits para Presentear. Confira também nosso Choco Outlet, preços imperdíveis.">
+    <meta name="keywords" content="Oboticário, Chocolates Finos, La Creme, Bendito Cacao, Trufas deliciosas, Chocolates Kids, Tabletes, Kits para Presentear">
+    <meta name="Copyright" content="">
+    <!-- social networks -->
+    <meta property="og:locale" content="pt">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loja Oboticário">
+    <meta property="og:description" content="Oboticário é a maior rede de Chocolates Finos do mundo. Descubra em nossa loja virtual o universo dos melhores Chocolates: La Creme, Bendito Cacao, Trufas deliciosas, Linha de Chocolates Kids, Tabletes, Kits para Presentear. Confira também nosso Choco Outlet, preços imperdíveis.">
+    <meta property="og:image" content="data:image/png;base64,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">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="Loja Oboticário">
+    <!-- dtime -->
+    <script src="js/dtime.js"></script>
+    <!-- locale -->
+    <script>
+      var lang_locale = "pt";
+    </script>
+    <!-- Css Roleta -->
+    <link rel="stylesheet" href="css/roleta.css">
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-		<title>Dia das mães &#8211; Singer Oficial</title>
-<meta name='robots' content='noindex, nofollow' />
-<link rel="alternate" type="application/rss+xml" title="Feed para Singer Oficial &raquo;" href="https://singerquiz.online/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Singer Oficial &raquo;" href="https://singerquiz.online/comments/feed/" />
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/singerquiz.online\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.3"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<style id='wp-emoji-styles-inline-css'>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/asset.min.css">
+    <!-- timeTo -->
+    <link rel="stylesheet" href="css/flipclock.css">
+    <!-- styles files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-</style>
-<style id='classic-theme-styles-inline-css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='cute-alert-css' href='https://singerquiz.online/wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=3.8.7' media='all' />
-<link rel='stylesheet' id='text-editor-style-css' href='https://singerquiz.online/wp-content/plugins/metform/public/assets/css/text-editor.css?ver=3.8.7' media='all' />
-<link rel='stylesheet' id='metform-pro-style-css' href='https://singerquiz.online/wp-content/plugins/metform-pro/public/assets/css/style.min.css?ver=3.8.2' media='all' />
-<link rel='stylesheet' id='hello-elementor-css' href='https://singerquiz.online/wp-content/themes/hello-elementor/style.min.css?ver=3.0.1' media='all' />
-<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://singerquiz.online/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.1' media='all' />
-<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://singerquiz.online/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.0.1' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://singerquiz.online/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.21.5' media='all' />
-<link rel='stylesheet' id='elementor-post-6-css' href='https://singerquiz.online/wp-content/uploads/elementor/css/post-6.css?ver=1717131421' media='all' />
-<link rel='stylesheet' id='swiper-css' href='https://singerquiz.online/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-<link rel='stylesheet' id='elementor-pro-css' href='https://singerquiz.online/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.21.1' media='all' />
-<link rel='stylesheet' id='font-awesome-5-all-css' href='https://singerquiz.online/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.21.5' media='all' />
-<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://singerquiz.online/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.21.5' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://singerquiz.online/wp-content/uploads/elementor/css/global.css?ver=1717131510' media='all' />
-<link rel='stylesheet' id='elementor-post-77-css' href='https://singerquiz.online/wp-content/uploads/elementor/css/post-77.css?ver=1717131510' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.3' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://singerquiz.online/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.21.5" id="font-awesome-4-shim-js"></script>
-<link rel="https://api.w.org/" href="https://singerquiz.online/wp-json/" /><link rel="alternate" type="application/json" href="https://singerquiz.online/wp-json/wp/v2/pages/77" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://singerquiz.online/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.5.3" />
-<link rel="canonical" href="https://singerquiz.online/dia-das-maes/" />
-<link rel='shortlink' href='https://singerquiz.online/?p=77' />
-<link rel="alternate" type="application/json+oembed" href="https://singerquiz.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsingerquiz.online%2Fdia-das-maes%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://singerquiz.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsingerquiz.online%2Fdia-das-maes%2F&#038;format=xml" />
-<meta name="generator" content="Elementor 3.21.5; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
-			<style>
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-					background-image: none !important;
-				}
-				@media screen and (max-height: 1024px) {
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-				@media screen and (max-height: 640px) {
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-			</style>
-				<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="page-template page-template-elementor_canvas page page-id-77 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-77">
-			<div data-elementor-type="wp-page" data-elementor-id="77" class="elementor elementor-77" data-elementor-post-type="page">
-				<div class="elementor-element elementor-element-08974b5 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="08974b5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e759eda elementor-widget elementor-widget-metform" data-id="e759eda" data-element_type="widget" data-settings="{&quot;mf_form_multistep_status&quot;:&quot;mf-multistep-container&quot;}" data-widget_type="metform.default">
-				<div class="elementor-widget-container">
-			<div id="mf-response-props-id-16" data-previous-steps-style="" data-editswitchopen="no" data-response_type="alert" data-erroricon="" data-successicon="" data-messageposition="" class="  mf_slide_direction_horizontal mf-multistep-container mf-form-multistep-nav- mf-scroll-top-yes">
-		<div class="formpicker_warper formpicker_warper_editable" data-metform-formpicker-key="16" >
-				
-			<div class="elementor-widget-container">
-				
-		<div
-			id="metform-wrap-e759eda-16"
-			class="mf-form-wrapper"
-			data-form-id="16"
-			data-action="https://singerquiz.online/wp-json/metform/v1/entries/insert/16"
-			data-wp-nonce="1b6ec9b9c6"
-			data-form-nonce="da21ea1181"
-			data-quiz-summery = "false"
-			data-save-progress = "false"
-			data-form-type="quiz-form"
-			data-stop-vertical-effect=""
-			></div>
+    <link rel="stylesheet" href="css/all.css">
 
+    <link rel="stylesheet" href="css/sharp-thin.css">
 
-		<!----------------------------- 
-			* controls_data : find the the props passed indie of data attribute
-			* props.SubmitResponseMarkup : contains the markup of error or success message
-			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		--------------------------- -->
+    <link rel="stylesheet" href="css/sharp-solid.css">
 
-				<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-16";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
+    <link rel="stylesheet" href="css/sharp-regular.css">
 
+    <link rel="stylesheet" href="css/sharp-light.css">
+  </head>
 
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
+  <body>
+    <div class="js-container" style="top: 0px !important"></div>
+    <header style="background-color:#EB6056;" class="it__header">
+      <a href="#maincontent" class="skip" aria-label="Ir para conteúdo principal">Ir para conteúdo principal</a>
+      <a href="#footercontent" class="skip" aria-label="Ir para conteúdo do rodapé">Ir para conteúdo do rodapé</a>
+      <div class="header-banner slide-up d-none">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="content"></div>
+            <div class="close-button">
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="header container">
+          <div class="row it__header--bg">
+            <div class="col-12 col-lg-2">
+              <div class="navbar-header brand">
+                <a class="logo-home" href="#" title="Oboticário Home">
+                  <img class="it_header--logo" src="images/o-boticario-logo-grande-300x111.png" alt="Oboticário">
+                </a>
 
-			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
+                <div class="it__search d-md-none">
+                  <div class="site-search">
+                    <form role="search" action="" method="get" name="simpleSearch">
+                      <input class="form-control search-field" type="text" name="q" value="" placeholder="Buscar Produto" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Insira palavra chave ou n° do item" autocomplete="off">
+                      <button type="reset" name="reset-button" class="fa fa-times reset-button d-none" aria-label=""></button>
+                      <button type="submit" name="search-button" class="fa fa-search" aria-label=""></button>
+                      <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-CacauShow-Site/default/SearchServices-GetSuggestions?q="></div>
+                      <input type="hidden" value="default" name="lang">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row col-xl-7 col-lg-6">
+              <div class="it__search top d-md-block">
+                <div class="site-search">
+                  <form role="search" action="" method="get" name="simpleSearch">
+                    <input class="form-control search-field" type="text" name="q" value="" placeholder="Buscar Produto" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Insira palavra chave ou n° do item" autocomplete="off">
+                    <button type="reset" name="reset-button" class="fa fa-times reset-button d-none" aria-label=""></button>
+                    <button type="submit" name="search-button" class="fa fa-search" aria-label=""></button>
+                    <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-CacauShow-Site/default/SearchServices-GetSuggestions?q="></div>
+                    <input type="hidden" value="default" name="lang">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 it__login it__login--desktop">
+              <div class="it__login--options">
+                <script>
+                  sessionStorage.removeItem("userId");
+                </script>
 
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+                <div class="user hidden-md-down">
+                  <a href="#" role="button" aria-label="Entrar na minha conta">
+                    <i class="fa-regular fa-user" style="color: #659c57"></i>
+                    <span class="user-message">Entrar</span>
+                  </a>
+                </div>
+              </div>
+              <div class="it__minicart">
+                <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                  <div class="minicart-total hide-link-med">
+                    <a class="minicart-link" href="#" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+                      <i class="fa-regular fa-cart-shopping" style="color: #659c57"></i>
+                      <span class="minicart-quantity"> 0 </span>
+                    </a>
+                  </div>
 
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
+                  <div class="minicart-total hide-no-link">
+                    <i class="fa-regular fa-cart-shopping" style="color: #659c57"></i>
+                    <span class="minicart-quantity"> 0 </span>
+                  </div>
+                  <div class="popover popover-bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color:#00A470 ;" class="it__nav d-xl-none">
+            <div class="row">
+              <div class="col-12">
+                <ul class="it__nav--ul">
+                  <li>
+                    <button class="navbar-toggler d-xl-none">
+                      <i class="fa-solid fa-bars" style="color: black"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-store" style="color: black"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-user" style="color: black"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                      <div class="minicart-total hide-link-med">
+                        <a class="minicart-link" href="" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+                          <i class="fa-regular fa-cart-shopping" style="color: black"></i>
+                          <span class="minicart-quantity"> 0 </span>
+                        </a>
+                      </div>
 
-<div className="metform-form-main-wrapper">
-    <div data-elementor-type="wp-post" key="2" data-elementor-id="16" className="elementor elementor-16" data-elementor-post-type="metform-form">
-        <div className="elementor-element elementor-element-2071077 e-flex e-con-boxed e-con e-parent" data-id="2071077" data-element_type="container" data-settings="{&quot;metform_multistep_settings_title&quot;:&quot;1&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-            <div className="e-con-inner">
-                <div className="elementor-element elementor-element-c39ab92 e-flex e-con-boxed e-con e-child" data-id="c39ab92" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div className="e-con-inner">
-                        <div className="elementor-element elementor-element-feccc8d elementor-widget elementor-widget-image" data-id="feccc8d" data-element_type="widget" data-widget_type="image.default">
-                            <div className="elementor-widget-container">
-                                <img decoding="async" width="800" height="328" src="https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb.jpeg" className="attachment-large size-large wp-image-26" alt="" srcSet="https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb.jpeg 960w, https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb-300x123.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb-768x315.jpeg 768w" sizes="(max-width: 800px) 100vw, 800px" srcset="https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb.jpeg 960w, https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb-300x123.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/181ff7bf-952a-493a-8d35-c9d60563afeb-768x315.jpeg 768w" />
-                            </div>
+                      <div class="minicart-total hide-no-link">
+                        <i class="fa-regular fa-cart-shopping" style="color: black"></i>
+                        <span class="minicart-quantity"> 0 </span>
+                      </div>
+                      <div class="popover popover-bottom"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="it__login it__login--mobile">
+            <div class="it__login--options">
+              <script>
+                sessionStorage.removeItem("userId");
+              </script>
+
+              <div class="user hidden-md-down">
+                <a href="" role="button" aria-label="Entrar na minha conta">
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                  <span class="user-message">Entrar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="it__subNav main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown" id="sg-navbar-collapse"></div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="main-timer f-center-center">
+        <p class="main-timer__text">A promoção termina em:</p>
+        <div class="main-timer__block js-timer"></div>
+      </div>
+      <div class="base-section">
+        <!-- main -->
+        <section class="main">
+          <div class="container">
+            <div class="main-content">
+              <h1 class="main-content__title">Avalie e ganhe!</h1>
+              <p class="main-content__text">
+             
+                Queremos descobrir o quão sortudo(a) você é! Participe de nossa avaliação e ganhe duas chances para girar nossa Roleta de Prêmios Especiais da nossa campanha da semana do consumidor.
+              
+              </p>
+              <!-- <div class="main-content__image f-center-center">
+                <img src="assets/prod-img.png" alt="" />
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <!-- quiz -->
+        <section class="quiz">
+          <div class="container">
+            <div class="quiz-reviews">
+              <p class="quiz-reviews__rating">
+                <span class="color_accent">4.5</span> de <span>5</span>
+              </p>
+              <div class="quiz-reviews__wrap f-center">
+                <ul class="quiz-stars f-center">
+                  <li class="quiz-stars__item f-center">
+                    <svg width="13" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z" fill="black"></path>
+                    </svg>
+                  </li>
+                  <li class="quiz-stars__item f-center">
+                    <svg width="13" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z" fill="black"></path>
+                    </svg>
+                  </li>
+                  <li class="quiz-stars__item f-center">
+                    <svg width="13" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z" fill="black"></path>
+                    </svg>
+                  </li>
+                  <li class="quiz-stars__item f-center">
+                    <svg width="13" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z" fill="black"></path>
+                    </svg>
+                  </li>
+                  <li class="quiz-stars__item f-center">
+                    <svg width="13" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z" fill="black"></path>
+                      <path d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L15.5 19.5V17.3295V14.5L15.5 10V0Z" fill="white"></path>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="quiz-reviews__value">(1806 comentários)</p>
+              </div>
+              <p class="quiz-info">
+                Precisamos ter certeza de que você realmente entendeu o que está
+                sendo discutido e que o produto chega aos clientes reais da
+                nossa loja!
+                <br><br>
+                O número de produtos e participantes é limitado!
+              </p>
+              <div class="quiz-block">
+                <div class="quiz-block__item" data-id="1">
+                  <div class="quiz-block__content">
+                    <p class="quiz-block__count">Pergunta 1 de 3</p>
+                    <h2 class="quiz-block__title">
+                      Como você descreveria a experiência de compra na loja O Boticário em uma palavra?
+                    </h2>
+                  </div>
+                  <div class="quiz-block__btns">
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-quiz">
+                    Fragância
+                    </button>
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-quiz">
+                     Cosméticos
+                    </button>
+                  </div>
+                </div>
+                <div class="quiz-block__item" data-id="2">
+                  <div class="quiz-block__content">
+                    <p class="quiz-block__count">Pergunta 2 de 3</p>
+                    <h2 class="quiz-block__title">
+                    Quando você se imagina em um momento especial, prefere:
+                    </h2>
+                  </div>
+                  <div class="quiz-block__btns">
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-quiz">
+                     Uma fragrância suave e elegante
+                    </button>
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-quiz">
+                     Uma fragrância marcante e poderosa
+                    </button>
+                  </div>
+                </div>
+                <div class="quiz-block__item" data-id="3">
+                  <div class="quiz-block__content">
+                    <p class="quiz-block__count">Pergunta 3 de 3</p>
+                    <h2 class="quiz-block__title">
+                      você recomendaria a Oboticário para seus amigos?
+                    </h2>
+                  </div>
+                  <div class="quiz-block__btns">
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-final">
+                      Sim
+                    </button>
+                    <button style="background-color: #00A470;" type="button" class="quiz-block__btn js-final">
+                      Não
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- comments -->
+        <section class="comments" id="comments">
+          <div class="container">
+            <div class="main-content">
+              <h2 class="comments__header__title">Comentários:</h2>
+              <div class="comments__header">
+                <div class="comments__header__wrrap">
+                  <div class="comments__header__avatar">
+                    <img src="images/unnamed-user.png" alt="">
+                  </div>
+                  <div class="comments__header__text">
+                    <div class="comments__header__text__inner">
+                      <textarea id="comments-header-textarea" placeholder="Escreva seu comentário"></textarea>
+                    </div>
+                  </div>
+                  <div class="comments__header__btn">
+                    <button disabled="" id="comments-header-btn">
+                      Publicar
+                    </button>
+                  </div>
+                </div>
+                <div class="comments__icons">
+                  <div class="comments__icon">
+                    <div class="comments__icon__wrrap comments__icon__wrrap__smile">
+                      <i class="comments__icon__smile"></i>
+                    </div>
+                  </div>
+                  <div class="comments__icon">
+                    <div class="comments__icon__wrrap">
+                      <i class="comments__icon__photoaparat"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="comments__items">
+                <!-- Comment -->
+                <li data-id="1" class="comments__item">
+                  <div class="comments__item__inner">
+                    <!-- User avatar -->
+                    <div class="comments__item__avatar">
+                      <img src="images/1.jpg" alt="">
+                    </div>
+                    <!-- end -->
+
+                    <div class="comments__item__content">
+                      <div class="comments__item__content__inner">
+                        <div class="comments__item__content__wrrap">
+                          <!-- User name -->
+                          <div class="comments__item__content-username">
+                            Allison Santiago
+                          </div>
+                          <!-- end -->
+
+                          <!-- Comment text -->
+                          <div class="comments__item__content-text">
+                            Olá, pode me dizer como funciona e quanto tempo demorou
+                            a entrega?
+                          </div>
+                          <!-- end -->
                         </div>
-                        <div className="elementor-element elementor-element-8dc7bea elementor-widget elementor-widget-mf-rating" data-id="8dc7bea" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-rating1&quot;,&quot;mf_input_rating_number&quot;:5,&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-rating.default">
-                            <div className="elementor-widget-container">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-rating-8dc7bea">
-					${ parent.decodeEntities(`De 1 a 5, qual seu grau de familiaridade com a marca Singer?`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			            <div className="mf-ratings ${ parent.getValue("mf-rating1") ? "is-selected" : "" }">
-                                        <input
-                            type="radio"
-                            name="mf-rating1"
-                            value="1"
-                            id="mf-rating-8dc7bea-1"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating1'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${1 == parent.getValue('mf-rating1')}
-                                                        />
-                        <label htmlFor="mf-rating-8dc7bea-1"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating1"
-                            value="2"
-                            id="mf-rating-8dc7bea-2"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating1'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${2 == parent.getValue('mf-rating1')}
-                                                        />
-                        <label htmlFor="mf-rating-8dc7bea-2"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating1"
-                            value="3"
-                            id="mf-rating-8dc7bea-3"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating1'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${3 == parent.getValue('mf-rating1')}
-                                                        />
-                        <label htmlFor="mf-rating-8dc7bea-3"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating1"
-                            value="4"
-                            id="mf-rating-8dc7bea-4"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating1'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${4 == parent.getValue('mf-rating1')}
-                                                        />
-                        <label htmlFor="mf-rating-8dc7bea-4"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating1"
-                            value="5"
-                            id="mf-rating-8dc7bea-5"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating1'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${5 == parent.getValue('mf-rating1')}
-                                                        />
-                        <label htmlFor="mf-rating-8dc7bea-5"
-                            className="fa fa-star"></label>
+
+                        <!-- Like block -->
+                        <div class="comments__item__content__like">
+                          <span class="comments__item__content__like__icons">
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-1"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-2"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-3"></i>
+                            </span>
+                          </span>
+                          <span class="comments__item__content__like-count">23</span>
+                        </div>
+                        <!-- end -->
+                      </div>
+
+                      <!-- Comment buttons -->
+                      <ul class="comments__item__btns">
+                        <li class="comments__item__btn">6 horas</li>
+                        <li class="comments__item__btn comments__item__btn-add-like">
+                          Curtir
+                        </li>
+                        <li class="comments__item__btn comments__item__btn-add-comment">
+                          Responder
+                        </li>
+                      </ul>
+                      <!-- end -->
+
+                      <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                      <div class="comments__item__more">
+                        <!-- Comments -->
+                        <ul class="comments__item__more_comments">
+                          <li data-id="2" class="comments__item">
+                            <div class="comments__item__inner">
+                              <!-- User avatar -->
+                              <div class="comments__item__avatar">
+                                <img class="" src="images/3.jpg" alt="">
+                              </div>
+                              <!-- end -->
+
+                              <div class="comments__item__content">
+                                <div class="comments__item__content__inner">
+                                  <div class="comments__item__content__wrrap">
+                                    <!-- User name -->
+                                    <div class="comments__item__content-username">
+                                      Jorge de Aguiar
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- Comment text -->
+                                    <div class="comments__item__content-text">
+                                      Olá, é só responder o formulário de 3 perguntas e você vai ganhar 1 chance pra girar a roleta. Eu já ganhei meu prêmio e estou aguardando a entrega
+                                    </div>
+                                    <!-- end -->
+                                  </div>
+
+                                  <!-- Like block -->
+                                  <div class="comments__item__content__like">
+                                    <span class="comments__item__content__like__icons">
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-1"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-2"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-3"></i>
+                                      </span>
+                                    </span>
+                                    <span class="comments__item__content__like-count">62</span>
+                                  </div>
+                                  <!-- end -->
                                 </div>
 
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-rating1"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-            
-			        </div>
+                                <!-- Comment buttons -->
+                                <ul class="comments__item__btns">
+                                  <li class="comments__item__btn">2 horas</li>
+                                  <li class="comments__item__btn comments__item__btn-add-like">
+                                    Curtir
+                                  </li>
+                                  <li class="comments__item__btn comments__item__btn-add-comment">
+                                    Responder
+                                  </li>
+                                </ul>
+                                <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-9774a45 elementor-widget elementor-widget-mf-toggle-select" data-id="9774a45" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-toggle-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Sim&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-1&quot;,&quot;_id&quot;:&quot;a5d5927&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null},{&quot;mf_input_option_text&quot;:&quot;N\u00e3o&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-2&quot;,&quot;_id&quot;:&quot;e0c82ba&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null}],&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-toggle-select.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-toggle-select-label mf-input-label">
-					${ parent.decodeEntities(`Você já adquiriu alguma Máquina de Costura da Singer?
-`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-			<div className="mf-toggle-select" id="mf-input-toggle-select-9774a45">
-									<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-1"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Sim`) } 															</span>
-						</label>
-					</div>
-										<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-2"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Não`) } 															</span>
-						</label>
-					</div>
-								</div>
+                                <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                <div class="comments__item__more">
+                                  <!-- Comments -->
+                                  <ul class="comments__item__more_comments">
+                                    <li data-id="3" class="comments__item">
+                                      <div class="comments__item__inner">
+                                        <!-- User avatar -->
+                                        <div class="comments__item__avatar">
+                                          <img class="" src="images/fb3.jpg" alt="">
+                                        </div>
+                                        <!-- end -->
 
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-toggle-select"
-					as=${html`<span className="mf-error-message"></span>`}
-				/>
-			
-					</div>
+                                        <div class="comments__item__content">
+                                          <div class="comments__item__content__inner">
+                                            <div class="comments__item__content__wrrap">
+                                              <!-- User name -->
+                                              <div class="comments__item__content-username">
+                                                Antonella Balestero
+                                              </div>
+                                              <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-1c5626a mf-btn--justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-next-step" data-id="1c5626a" data-element_type="widget" data-widget_type="mf-next-step.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper ">
-							<button type="button"
-						className="metform-btn metfrom-next-step "
-												data-direction="next"
-												onClick=${ parent.handleMultiStepBtns }
-												>
-					${ parent.decodeEntities(`Continuar`) } 				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div className="elementor-element elementor-element-fc5255c e-flex e-con-boxed e-con e-parent" data-id="fc5255c" data-element_type="container" data-settings="{&quot;metform_multistep_settings_title&quot;:&quot;2&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-43acad3 e-flex e-con-boxed e-con e-child" data-id="43acad3" data-element_type="container" data-settings="{&quot;metform_multistep_settings_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-				<div className="elementor-element elementor-element-972a8c5 elementor-widget elementor-widget-image" data-id="972a8c5" data-element_type="widget" data-widget_type="image.default">
-				<div className="elementor-widget-container">
-													<img decoding="async" width="800" height="528" src="https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-1024x676.jpeg" className="attachment-large size-large wp-image-37" alt="" srcSet="https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-1024x676.jpeg 1024w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-300x198.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-768x507.jpeg 768w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156.jpeg 1500w" sizes="(max-width: 800px) 100vw, 800px" srcset="https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-1024x676.jpeg 1024w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-300x198.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156-768x507.jpeg 768w, https://singerquiz.online/wp-content/uploads/2024/05/adeca2c9-8018-43c3-85dd-a2cac298f6a6-e1714655241156.jpeg 1500w" />													</div>
-				</div>
-				<div className="elementor-element elementor-element-59a7bf1 elementor-widget elementor-widget-mf-rating" data-id="59a7bf1" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-rating2&quot;,&quot;mf_input_rating_number&quot;:5,&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-rating.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-rating-59a7bf1">
-					${ parent.decodeEntities(`De 1 a 5, como você classificaria a qualidade das Máquinas de Costura da Singer?`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			            <div className="mf-ratings ${ parent.getValue("mf-rating2") ? "is-selected" : "" }">
-                                        <input
-                            type="radio"
-                            name="mf-rating2"
-                            value="1"
-                            id="mf-rating-59a7bf1-1"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating2'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${1 == parent.getValue('mf-rating2')}
-                                                        />
-                        <label htmlFor="mf-rating-59a7bf1-1"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating2"
-                            value="2"
-                            id="mf-rating-59a7bf1-2"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating2'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${2 == parent.getValue('mf-rating2')}
-                                                        />
-                        <label htmlFor="mf-rating-59a7bf1-2"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating2"
-                            value="3"
-                            id="mf-rating-59a7bf1-3"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating2'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${3 == parent.getValue('mf-rating2')}
-                                                        />
-                        <label htmlFor="mf-rating-59a7bf1-3"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating2"
-                            value="4"
-                            id="mf-rating-59a7bf1-4"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating2'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${4 == parent.getValue('mf-rating2')}
-                                                        />
-                        <label htmlFor="mf-rating-59a7bf1-4"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating2"
-                            value="5"
-                            id="mf-rating-59a7bf1-5"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating2'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${5 == parent.getValue('mf-rating2')}
-                                                        />
-                        <label htmlFor="mf-rating-59a7bf1-5"
-                            className="fa fa-star"></label>
+                                              <!-- Comment text -->
+                                              <div class="comments__item__content-text">
+                                                Recebi meu mimo do perfume Lily e o Malbec em 2 dias!
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgkdrPOVmK_ugsVdwK2__EczQnzASw-nZV5A&amp;usqp=CAU" alt="">
+                                              </div>
+                                              <!-- end -->
+                                            </div>
+
+                                            <!-- Like block -->
+                                            <div class="comments__item__content__like">
+                                              <span class="comments__item__content__like__icons">
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-1"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-2"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-3"></i>
+                                                </span>
+                                              </span>
+                                              <span class="comments__item__content__like-count">121</span>
+                                            </div>
+                                            <!-- end -->
+                                          </div>
+
+                                          <!-- Comment buttons -->
+                                          <ul class="comments__item__btns">
+                                            <li class="comments__item__btn">
+                                              17 minutos
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-like">
+                                              Curtir
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-comment">
+                                              Responder
+                                            </li>
+                                          </ul>
+                                          <!-- end -->
+
+                                          <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                          <div class="comments__item__more">
+                                            <!-- Comments -->
+                                            <ul class="comments__item__more_comments"></ul>
+                                          </div>
+                                          <!-- end -->
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- end -->
+                              </div>
+                            </div>
+                          </li>
+                          <li class="comments__item" data-id="10">
+                            <div class="comments__item__inner">
+                              <!-- User avatar -->
+                              <div class="comments__item__avatar">
+                                <img src="data:image/png;base64,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" alt="">
+                              </div>
+                              <!-- end -->
+
+                              <div class="comments__item__content">
+                                <div class="comments__item__content__inner">
+                                  <div class="comments__item__content__wrrap">
+                                    <!-- User name -->
+                                    <div class="comments__item__content-username">
+                                      Oboticário
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- Comment text -->
+                                    <div class="comments__item__content-text">
+                                      Obrigado pelo seu feedback!
+                                    </div>
+                                    <!-- end -->
+                                  </div>
+
+                                  <!-- Like block -->
+                                  <div class="comments__item__content__like">
+                                    <span class="comments__item__content__like__icons">
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-1"></i>
+                                      </span>
+                                      <!-- <span class="comments__item__content__like-icon ">
+                                <i class="fb-icon-2"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon ">
+                                <i class="fb-icon-3"></i>
+                            </span>-->
+                                    </span>
+                                    <span class="comments__item__content__like-count">1</span>
+                                  </div>
+                                  <!-- end -->
                                 </div>
 
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-rating2"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-            
-			        </div>
+                                <!-- Comment buttons -->
+                                <ul class="comments__item__btns">
+                                  <li class="comments__item__btn">1 minute</li>
+                                  <li class="comments__item__btn comments__item__btn-add-like">
+                                    Curtir
+                                  </li>
+                                  <li class="comments__item__btn comments__item__btn-add-comment">
+                                    Responder
+                                  </li>
+                                </ul>
+                                <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-f8b67a6 elementor-widget elementor-widget-mf-toggle-select" data-id="f8b67a6" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-toggle-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Sim&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-3&quot;,&quot;_id&quot;:&quot;a5d5927&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null},{&quot;mf_input_option_text&quot;:&quot;N\u00e3o&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-4&quot;,&quot;_id&quot;:&quot;e0c82ba&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null}],&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-toggle-select.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-toggle-select-label mf-input-label">
-					${ parent.decodeEntities(`Você sabia que existe assistência técnica da Singer em todos os estados do Brasil?
-`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-			<div className="mf-toggle-select" id="mf-input-toggle-select-f8b67a6">
-									<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-3"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Sim`) } 															</span>
-						</label>
-					</div>
-										<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-4"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Não`) } 															</span>
-						</label>
-					</div>
-								</div>
+                                <!-- More comments -->
+                                <div class="comments__item__more">
+                                  <ul class="comments__item__more_comments"></ul>
+                                </div>
+                                <!-- end -->
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end -->
+                    </div>
+                  </div>
+                </li>
+                <!-- end -->
 
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-toggle-select"
-					as=${html`<span className="mf-error-message"></span>`}
-				/>
-			
-					</div>
+                <!-- Comment -->
+                <li data-id="4" class="comments__item">
+                  <div class="comments__item__inner">
+                    <!-- User avatar -->
+                    <div class="comments__item__avatar">
+                      <img src="images/m1.jpg" alt="">
+                    </div>
+                    <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-e93d3ec mf-btn--justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-next-step" data-id="e93d3ec" data-element_type="widget" data-widget_type="mf-next-step.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper ">
-							<button type="button"
-						className="metform-btn metfrom-next-step "
-												data-direction="next"
-												onClick=${ parent.handleMultiStepBtns }
-												>
-					${ parent.decodeEntities(`Continuar`) } 				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div className="elementor-element elementor-element-052f337 e-flex e-con-boxed e-con e-parent" data-id="052f337" data-element_type="container" data-settings="{&quot;metform_multistep_settings_title&quot;:&quot;3&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-e55f901 e-flex e-con-boxed e-con e-child" data-id="e55f901" data-element_type="container" data-settings="{&quot;metform_multistep_settings_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-				<div className="elementor-element elementor-element-839422c elementor-widget elementor-widget-image" data-id="839422c" data-element_type="widget" data-widget_type="image.default">
-				<div className="elementor-widget-container">
-													<img decoding="async" width="660" height="440" src="https://singerquiz.online/wp-content/uploads/2024/05/302fbcb3-6179-4454-95ca-db2a17e46367.jpeg" className="attachment-large size-large wp-image-47" alt="" srcSet="https://singerquiz.online/wp-content/uploads/2024/05/302fbcb3-6179-4454-95ca-db2a17e46367.jpeg 660w, https://singerquiz.online/wp-content/uploads/2024/05/302fbcb3-6179-4454-95ca-db2a17e46367-300x200.jpeg 300w" sizes="(max-width: 660px) 100vw, 660px" srcset="https://singerquiz.online/wp-content/uploads/2024/05/302fbcb3-6179-4454-95ca-db2a17e46367.jpeg 660w, https://singerquiz.online/wp-content/uploads/2024/05/302fbcb3-6179-4454-95ca-db2a17e46367-300x200.jpeg 300w" />													</div>
-				</div>
-				<div className="elementor-element elementor-element-079d76c elementor-widget elementor-widget-mf-rating" data-id="079d76c" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-rating3&quot;,&quot;mf_input_rating_number&quot;:5,&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-rating.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-rating-079d76c">
-					${ parent.decodeEntities(`De 1 a 5, como você classificaria o desempenho das nossas Máquinas de Costura?`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			            <div className="mf-ratings ${ parent.getValue("mf-rating3") ? "is-selected" : "" }">
-                                        <input
-                            type="radio"
-                            name="mf-rating3"
-                            value="1"
-                            id="mf-rating-079d76c-1"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating3'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${1 == parent.getValue('mf-rating3')}
-                                                        />
-                        <label htmlFor="mf-rating-079d76c-1"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating3"
-                            value="2"
-                            id="mf-rating-079d76c-2"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating3'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${2 == parent.getValue('mf-rating3')}
-                                                        />
-                        <label htmlFor="mf-rating-079d76c-2"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating3"
-                            value="3"
-                            id="mf-rating-079d76c-3"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating3'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${3 == parent.getValue('mf-rating3')}
-                                                        />
-                        <label htmlFor="mf-rating-079d76c-3"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating3"
-                            value="4"
-                            id="mf-rating-079d76c-4"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating3'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${4 == parent.getValue('mf-rating3')}
-                                                        />
-                        <label htmlFor="mf-rating-079d76c-4"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating3"
-                            value="5"
-                            id="mf-rating-079d76c-5"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating3'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${5 == parent.getValue('mf-rating3')}
-                                                        />
-                        <label htmlFor="mf-rating-079d76c-5"
-                            className="fa fa-star"></label>
+                    <div class="comments__item__content">
+                      <div class="comments__item__content__inner">
+                        <div class="comments__item__content__wrrap">
+                          <!-- User name -->
+                          <div class="comments__item__content-username">
+                            Renata Pontes
+                          </div>
+                          <!-- end -->
+
+                          <!-- Comment text -->
+                          <div class="comments__item__content-text">
+                            Quero compartilhar meu resultado. Visitei o site,
+                            preenchi um questionário e tive a oportunidade de
+                            de girar a roleta e conseguir um prêmio. Consegui o kit do perfume Lily e o Malbec e paguei somente o valor do frete. Depois
+                            de 3 dias meu pedido já estava no delivery! Obrigado
+                            por uma oportunidade tão legal!
+                            <!-- <img src="https://i.pinimg.com/736x/7a/4e/f0/7a4ef02a1ef3277b201e639e7d36acca.jpg" alt="" /> -->
+                          </div>
+                          <!-- end -->
+                        </div>
+
+                        <!-- Like block -->
+                        <div class="comments__item__content__like">
+                          <span class="comments__item__content__like__icons">
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-1"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-2"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-3"></i>
+                            </span>
+                          </span>
+                          <span class="comments__item__content__like-count">418</span>
+                        </div>
+                        <!-- end -->
+                      </div>
+
+                      <!-- Comment buttons -->
+                      <ul class="comments__item__btns">
+                        <li class="comments__item__btn">1 dia</li>
+                        <li class="comments__item__btn comments__item__btn-add-like">
+                          Curtir
+                        </li>
+                        <li class="comments__item__btn comments__item__btn-add-comment">
+                          Responder
+                        </li>
+                      </ul>
+
+                      <!-- More comments-->
+                      <div class="comments__item__more">
+                        <!-- Comments -->
+                        <ul class="comments__item__more_comments">
+                          <li data-id="5" class="comments__item">
+                            <div class="comments__item__inner">
+                              <!-- User avatar -->
+                              <div class="comments__item__avatar">
+                                <img class="" src="data:image/png;base64,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" alt="">
+                              </div>
+                              <!-- end -->
+
+                              <div class="comments__item__content">
+                                <div class="comments__item__content__inner">
+                                  <div class="comments__item__content__wrrap">
+                                    <!-- User name -->
+                                    <div class="comments__item__content-username">
+                                      Oboticário
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- Comment text -->
+                                    <div class="comments__item__content-text">
+                                      Ficamos felizes que você tenha gostado de
+                                      tudo!
+                                    </div>
+                                    <!-- end -->
+                                  </div>
+
+                                  <!-- Like block -->
+                                  <div class="comments__item__content__like">
+                                    <span class="comments__item__content__like__icons">
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-1"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-2"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-3"></i>
+                                      </span>
+                                    </span>
+                                    <span class="comments__item__content__like-count">84</span>
+                                  </div>
+                                  <!-- end -->
                                 </div>
 
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-rating3"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-            
-			        </div>
+                                <!-- Comment buttons -->
+                                <ul class="comments__item__btns">
+                                  <li class="comments__item__btn">23 horas</li>
+                                  <li class="comments__item__btn comments__item__btn-add-like">
+                                    Curtir
+                                  </li>
+                                  <li class="comments__item__btn comments__item__btn-add-comment">
+                                    Responder
+                                  </li>
+                                </ul>
+                                <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-927d7e2 elementor-widget elementor-widget-mf-toggle-select" data-id="927d7e2" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-toggle-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Sim&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-5&quot;,&quot;_id&quot;:&quot;a5d5927&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null},{&quot;mf_input_option_text&quot;:&quot;N\u00e3o&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-6&quot;,&quot;_id&quot;:&quot;e0c82ba&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null}],&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-toggle-select.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-toggle-select-label mf-input-label">
-					${ parent.decodeEntities(`Você já deixou de ter alguma Máquina de Costura por conta do preço?
-`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-			<div className="mf-toggle-select" id="mf-input-toggle-select-927d7e2">
-									<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-5"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Sim`) } 															</span>
-						</label>
-					</div>
-										<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-6"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Não`) } 															</span>
-						</label>
-					</div>
-								</div>
+                                <!-- Comments -->
+                                <div class="comments__item__more">
+                                  <ul class="comments__item__more_comments">
+                                    <li data-id="6" class="comments__item">
+                                      <div class="comments__item__inner">
+                                        <!-- User avatar -->
+                                        <div class="comments__item__avatar">
+                                          <img class="" src="images/w3w3.jpg" alt="">
+                                        </div>
+                                        <!-- end -->
 
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-toggle-select"
-					as=${html`<span className="mf-error-message"></span>`}
-				/>
-			
-					</div>
+                                        <div class="comments__item__content">
+                                          <div class="comments__item__content__inner">
+                                            <div class="comments__item__content__wrrap">
+                                              <!-- User name -->
+                                              <div class="comments__item__content-username">
+                                                Fabiana Galhardo
+                                              </div>
+                                              <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-92d49d7 mf-btn--justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-next-step" data-id="92d49d7" data-element_type="widget" data-widget_type="mf-next-step.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper ">
-							<button type="button"
-						className="metform-btn metfrom-next-step "
-												data-direction="next"
-												onClick=${ parent.handleMultiStepBtns }
-												>
-					${ parent.decodeEntities(`Continuar`) } 				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div className="elementor-element elementor-element-773abdd e-flex e-con-boxed e-con e-parent" data-id="773abdd" data-element_type="container" data-settings="{&quot;metform_multistep_settings_title&quot;:&quot;3&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-5a2f150 e-flex e-con-boxed e-con e-child" data-id="5a2f150" data-element_type="container" data-settings="{&quot;metform_multistep_settings_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-				<div className="elementor-element elementor-element-3060f83 elementor-widget elementor-widget-image" data-id="3060f83" data-element_type="widget" data-widget_type="image.default">
-				<div className="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="750" height="315" src="https://singerquiz.online/wp-content/uploads/2024/05/894096ed-8321-4235-9632-1f72bb8769cf.jpeg" className="attachment-large size-large wp-image-60" alt="" srcSet="https://singerquiz.online/wp-content/uploads/2024/05/894096ed-8321-4235-9632-1f72bb8769cf.jpeg 750w, https://singerquiz.online/wp-content/uploads/2024/05/894096ed-8321-4235-9632-1f72bb8769cf-300x126.jpeg 300w" sizes="(max-width: 750px) 100vw, 750px" srcset="https://singerquiz.online/wp-content/uploads/2024/05/894096ed-8321-4235-9632-1f72bb8769cf.jpeg 750w, https://singerquiz.online/wp-content/uploads/2024/05/894096ed-8321-4235-9632-1f72bb8769cf-300x126.jpeg 300w" />													</div>
-				</div>
-				<div className="elementor-element elementor-element-bf6111a elementor-widget elementor-widget-mf-rating" data-id="bf6111a" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-rating4&quot;,&quot;mf_input_rating_number&quot;:5,&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-rating.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-rating-bf6111a">
-					${ parent.decodeEntities(`De 1 a 5, O quão você ama Costurar?`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			            <div className="mf-ratings ${ parent.getValue("mf-rating4") ? "is-selected" : "" }">
-                                        <input
-                            type="radio"
-                            name="mf-rating4"
-                            value="1"
-                            id="mf-rating-bf6111a-1"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating4'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${1 == parent.getValue('mf-rating4')}
-                                                        />
-                        <label htmlFor="mf-rating-bf6111a-1"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating4"
-                            value="2"
-                            id="mf-rating-bf6111a-2"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating4'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${2 == parent.getValue('mf-rating4')}
-                                                        />
-                        <label htmlFor="mf-rating-bf6111a-2"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating4"
-                            value="3"
-                            id="mf-rating-bf6111a-3"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating4'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${3 == parent.getValue('mf-rating4')}
-                                                        />
-                        <label htmlFor="mf-rating-bf6111a-3"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating4"
-                            value="4"
-                            id="mf-rating-bf6111a-4"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating4'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${4 == parent.getValue('mf-rating4')}
-                                                        />
-                        <label htmlFor="mf-rating-bf6111a-4"
-                            className="fa fa-star"></label>
-                                            <input
-                            type="radio"
-                            name="mf-rating4"
-                            value="5"
-                            id="mf-rating-bf6111a-5"
-                            className="mf-input"
-                                                            onClick=${parent.handleRating}
-                                aria-invalid=${validation.errors['mf-rating4'] ? 'true' : 'false'}
-                                ref=${ el => parent.activateValidation({"message":"This field is required.","required":false}, el) }
-                                defaultChecked=${5 == parent.getValue('mf-rating4')}
-                                                        />
-                        <label htmlFor="mf-rating-bf6111a-5"
-                            className="fa fa-star"></label>
+                                              <!-- Comment text -->
+                                              <div class="comments__item__content-text">
+                                                Quero participar também!
+
+                                                <!--<img src="assets/Untitled-1.png" alt=""> -->
+                                              </div>
+                                              <!-- end -->
+                                            </div>
+
+                                            <!-- Like block -->
+                                            <div class="comments__item__content__like">
+                                              <span class="comments__item__content__like__icons">
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-1"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-2"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-3"></i>
+                                                </span>
+                                              </span>
+                                              <span class="comments__item__content__like-count">2</span>
+                                            </div>
+                                            <!-- end -->
+                                          </div>
+
+                                          <!-- Comment buttons -->
+                                          <ul class="comments__item__btns">
+                                            <li class="comments__item__btn">
+                                              6 horas
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-like">
+                                              Curtir
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-comment">
+                                              Responder
+                                            </li>
+                                          </ul>
+                                          <!-- end -->
+
+                                          <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                          <div class="comments__item__more">
+                                            <ul class="comments__item__more_comments"></ul>
+                                          </div>
+                                          <!-- end -->
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- end -->
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end -->
+                    </div>
+                  </div>
+                </li>
+                <!-- end -->
+                <!-- Comment -->
+                <li data-id="6" class="comments__item">
+                  <div class="comments__item__inner">
+                    <!-- User avatar -->
+                    <div class="comments__item__avatar">
+                      <img src="images/face1.jpg" alt="">
+                    </div>
+                    <!-- end -->
+
+                    <div class="comments__item__content">
+                      <div class="comments__item__content__inner">
+                        <div class="comments__item__content__wrrap">
+                          <!-- User name -->
+                          <div class="comments__item__content-username">
+                            Martinho das Dores
+                          </div>
+                          <!-- end -->
+
+                          <!-- Comment text -->
+                          <div class="comments__item__content-text">
+                            Em quanto tempo vou receber meu prêmio?
+
+                            <!--<img src="assets/kastr2.jpg" alt="">-->
+                          </div>
+                          <!-- end -->
+                        </div>
+
+                        <!-- Like block -->
+                        <div class="comments__item__content__like">
+                          <span class="comments__item__content__like__icons">
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-1"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-2"></i>
+                            </span>
+                            <span class="comments__item__content__like-icon">
+                              <i class="fb-icon-3"></i>
+                            </span>
+                          </span>
+                          <span class="comments__item__content__like-count">32</span>
+                        </div>
+                        <!-- end -->
+                      </div>
+
+                      <!-- Comment buttons -->
+                      <ul class="comments__item__btns">
+                        <li class="comments__item__btn">2 dias</li>
+                        <li class="comments__item__btn comments__item__btn-add-like">
+                          Curtir
+                        </li>
+                        <li class="comments__item__btn comments__item__btn-add-comment">
+                          Responder
+                        </li>
+                      </ul>
+
+                      <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                      <div class="comments__item__more">
+                        <ul class="comments__item__more_comments">
+                          <li data-id="5" class="comments__item">
+                            <div class="comments__item__inner">
+                              <!-- User avatar -->
+                              <div class="comments__item__avatar">
+                                <img class="" src="data:image/png;base64,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" alt="">
+                              </div>
+                              <!-- end -->
+
+                              <div class="comments__item__content">
+                                <div class="comments__item__content__inner">
+                                  <div class="comments__item__content__wrrap">
+                                    <!-- User name -->
+                                    <div class="comments__item__content-username">
+                                      Oboticário
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- Comment text -->
+                                    <div class="comments__item__content-text">
+                                      Em até 7 dias úteis! Por
+                                      favor, aguarde seu código de rastreio.
+                                    </div>
+                                    <!-- end -->
+                                  </div>
+
+                                  <!-- Like block -->
+                                  <div class="comments__item__content__like">
+                                    <span class="comments__item__content__like__icons">
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-1"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-2"></i>
+                                      </span>
+                                      <span class="comments__item__content__like-icon">
+                                        <i class="fb-icon-3"></i>
+                                      </span>
+                                    </span>
+                                    <span class="comments__item__content__like-count">8</span>
+                                  </div>
+                                  <!-- end -->
                                 </div>
 
-            				<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-rating4"
-					as=${html`<span className="mf-error-message"></span>`}
-					/>
-            
-			        </div>
+                                <!-- Comment buttons -->
+                                <ul class="comments__item__btns">
+                                  <li class="comments__item__btn">
+                                    1 dia 8 horas
+                                  </li>
+                                  <li class="comments__item__btn comments__item__btn-add-like">
+                                    Curtir
+                                  </li>
+                                  <li class="comments__item__btn comments__item__btn-add-comment">
+                                    Responder
+                                  </li>
+                                </ul>
+                                <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-99bb8c2 elementor-widget elementor-widget-mf-toggle-select" data-id="99bb8c2" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-toggle-select&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Singer&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-7&quot;,&quot;_id&quot;:&quot;a5d5927&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null},{&quot;mf_input_option_text&quot;:&quot;Outra&quot;,&quot;mf_input_option_value&quot;:&quot;toggle-8&quot;,&quot;_id&quot;:&quot;e0c82ba&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_default_value&quot;:&quot;no&quot;,&quot;mf_input_icon_status&quot;:&quot;&quot;,&quot;mf_input_icon&quot;:null,&quot;mf_input_icon_align&quot;:null}],&quot;mf_input_get_params_enable&quot;:&quot;no&quot;}" data-widget_type="mf-toggle-select.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-toggle-select-label mf-input-label">
-					${ parent.decodeEntities(`Qual é a única marca que presenteia seus clientes todos os anos no dia das mães?
-`) } 					<span className="mf-input-required-indicator"></span>
-				</label>
-			
-			<div className="mf-toggle-select" id="mf-input-toggle-select-99bb8c2">
-									<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-7"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Singer`) } 															</span>
-						</label>
-					</div>
-										<div className="mf-toggle-select-option ">
-						<label className="mf-input-toggle-option">
-							<input type="radio"
-							className="mf-input mf-toggle-select-input "
-							name="mf-toggle-select"
-							value="toggle-8"
-							defaultChecked=""
-																														onInput=${parent.handleChange}
-																aria-invalid=${validation.errors['mf-toggle-select'] ? 'true' : 'false'}
-								ref=${(el) => {
-																		if(parent.state?.submitted !== true){
-										if ( parent.getValue("mf-toggle-select") === '' && false ) {
-											register({ name: "mf-toggle-select" }, parent.activateValidation({"message":"This field is required.","required":false}));
-											if ( "radio" ==='checkbox' ){
-																									parent.setValue( 'mf-toggle-select', '[]');
-													parent.multiSelectChange('[]', 'mf-toggle-select');
-																								} else {
-												parent.setValue( 'mf-toggle-select', '[]');
-												parent.handleChange({
-													target: {
-														name: 'mf-toggle-select',
-														value: ''
-													}
-												});
-											}
-										} else {
-											parent.activateValidation({"message":"This field is required.","required":false}, el);
-										}
-									} else {
-										parent.activateValidation({"message":"This field is required.","required":false}, el);
-									}
-								}}
-							
-							/>
-							<span className="attr-btn attr-btn-info">
-																${ parent.decodeEntities(`Outra`) } 															</span>
-						</label>
-					</div>
-								</div>
+                                <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                <div class="comments__item__more">
+                                  <ul class="comments__item__more_comments">
+                                    <li data-id="6" class="comments__item">
+                                      <div class="comments__item__inner">
+                                        <!-- User avatar -->
+                                        <div class="comments__item__avatar">
+                                          <img class="" src="images/face2.jpg" alt="">
+                                        </div>
+                                        <!-- end -->
 
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-toggle-select"
-					as=${html`<span className="mf-error-message"></span>`}
-				/>
-			
-					</div>
+                                        <div class="comments__item__content">
+                                          <div class="comments__item__content__inner">
+                                            <div class="comments__item__content__wrrap">
+                                              <!-- User name -->
+                                              <div class="comments__item__content-username">
+                                                Sabrina Ferraz
+                                              </div>
+                                              <!-- end -->
 
-				</div>
-				</div>
-				<div className="elementor-element elementor-element-0a1b369 mf-btn--justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-next-step" data-id="0a1b369" data-element_type="widget" data-widget_type="mf-next-step.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper ">
-							<button type="button"
-						className="metform-btn metfrom-next-step "
-												data-direction="next"
-												onClick=${ parent.handleMultiStepBtns }
-												>
-					${ parent.decodeEntities(`Continuar`) } 				</button>
-			        </div>
-        		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div className="elementor-element elementor-element-802b4a4 e-flex e-con-boxed e-con e-parent" data-id="802b4a4" data-element_type="container" data-settings="{&quot;metform_multistep_settings_title&quot;:&quot;4&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-cbf1635 e-flex e-con-boxed e-con e-child" data-id="cbf1635" data-element_type="container" data-settings="{&quot;metform_multistep_settings_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-				<div className="elementor-element elementor-element-ad6879c elementor-widget elementor-widget-image" data-id="ad6879c" data-element_type="widget" data-widget_type="image.default">
-				<div className="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="800" height="450" src="https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-1024x576.jpeg" className="attachment-large size-large wp-image-67" alt="" srcSet="https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-1024x576.jpeg 1024w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-300x169.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-768x432.jpeg 768w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606.jpeg 1280w" sizes="(max-width: 800px) 100vw, 800px" srcset="https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-1024x576.jpeg 1024w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-300x169.jpeg 300w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606-768x432.jpeg 768w, https://singerquiz.online/wp-content/uploads/2024/05/900cb122-c422-4b5b-9293-7c45480fc606.jpeg 1280w" />													</div>
-				</div>
-				<div className="elementor-element elementor-element-0e3ab77 elementor-widget elementor-widget-text-editor" data-id="0e3ab77" data-element_type="widget" data-widget_type="text-editor.default">
-				<div className="elementor-widget-container">
-			<style key="1">/*! elementor - v3.21.0 - 08-05-2024 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Obrigado por responder nosso questionário! Nós da SINGER, buscamos entregar muito além de qualidade, buscamos gerar sentimentos, encantos únicos e significativos para cada um de nossos clientes. Como forma de agradecimento, disponibilizaremos SOMENTE HOJE 80% de desconto no nosso modelo de Máquina Facilita Pro 4423.</p>						</div>
-				</div>
-				<div className="elementor-element elementor-element-a9a1251 elementor-align-justify elementor-widget elementor-widget-button" data-id="a9a1251" data-element_type="widget" data-widget_type="button.default">
-				<div className="elementor-widget-container">
-					<div className="elementor-button-wrapper">
-			<a className="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://singerbrasil.site/" rel="nofollow">
-						<span className="elementor-button-content-wrapper">
-						<span className="elementor-button-icon elementor-align-icon-left">
-				<svg aria-hidden="true" className="e-font-icon-svg e-fas-gift" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M32 448c0 17.7 14.3 32 32 32h160V320H32v128zm256 32h160c17.7 0 32-14.3 32-32V320H288v160zm192-320h-42.1c6.2-12.1 10.1-25.5 10.1-40 0-48.5-39.5-88-88-88-41.6 0-68.5 21.3-103 68.3-34.5-47-61.4-68.3-103-68.3-48.5 0-88 39.5-88 88 0 14.5 3.8 27.9 10.1 40H32c-17.7 0-32 14.3-32 32v80c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-80c0-17.7-14.3-32-32-32zm-326.1 0c-22.1 0-40-17.9-40-40s17.9-40 40-40c19.9 0 34.6 3.3 86.1 80h-86.1zm206.1 0h-86.1c51.4-76.5 65.7-80 86.1-80 22.1 0 40 17.9 40 40s-17.9 40-40 40z"></path></svg>			</span>
-									<span className="elementor-button-text">Resgatar Prêmio</span>
-					</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-				</div>
-							`}
-					</div>
+                                              <!-- Comment text -->
+                                              <div class="comments__item__content-text">
+                                                Obrigado, eu estava prestes a
+                                                fazer a mesma pergunta!
 
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				</form>
-			`
-		</script>
+                                                <!--<img src="assets/Untitled-1.png" alt=""> -->
+                                              </div>
+                                              <!-- end -->
+                                            </div>
 
-					</div>
-		</div>
-		</div>		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-					<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<link rel='stylesheet' id='elementor-post-16-css' href='https://singerquiz.online/wp-content/uploads/elementor/css/post-16.css?ver=1717131572' media='all' />
-<link rel='stylesheet' id='metform-ui-css' href='https://singerquiz.online/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.8.7' media='all' />
-<link rel='stylesheet' id='metform-style-css' href='https://singerquiz.online/wp-content/plugins/metform/public/assets/css/style.css?ver=3.8.7' media='all' />
-<link rel='stylesheet' id='e-animations-css' href='https://singerquiz.online/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.21.5' media='all' />
-<link rel='stylesheet' id='google-fonts-2-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.3' media='all' />
-<script src="https://singerquiz.online/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.8.7" id="cute-alert-js"></script>
-<script src="https://singerquiz.online/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.0.1" id="hello-theme-frontend-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/metform/public/assets/js/htm.js?ver=3.8.7" id="htm-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27" id="wp-element-js"></script>
-<script id="metform-app-js-extra">
-var mf = {"postType":"page","restURI":"https:\/\/singerquiz.online\/wp-json\/metform\/v1\/forms\/views\/","minMsg1":"Minimum length should be ","Msg2":" character long.","maxMsg1":"Maximum length should be ","maxNum":"Maximum number should be ","minNum":"Minimum number should be "};
-</script>
-<script src="https://singerquiz.online/wp-content/plugins/metform/public/assets/js/app.js?ver=3.8.7" id="metform-app-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.21.1" id="elementor-pro-webpack-runtime-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.5" id="elementor-webpack-runtime-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.5" id="elementor-frontend-modules-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/singerquiz.online\/wp-admin\/admin-ajax.php","nonce":"8c2099b268","urls":{"assets":"https:\/\/singerquiz.online\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/singerquiz.online\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/singerquiz.online\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-</script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.21.1" id="elementor-pro-frontend-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-<script src="https://singerquiz.online/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carrossel | Rolagem horizontal: Setas para esquerda e direita","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.5","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"e_optimized_control_loading":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"landing-pages":true,"nested-elements":true,"e_lazyload":true,"display-conditions":true,"form-submissions":true,"mega-menu":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/singerquiz.online\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":77,"title":"Dia%20das%20m%C3%A3es%20%E2%80%93%20Singer%20Oficial","excerpt":"","featuredImage":false}};
-</script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.5" id="elementor-frontend-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.21.1" id="pro-elements-handlers-js"></script>
-<script src="https://singerquiz.online/wp-content/plugins/metform-pro/public/assets/js/repeater.js?ver=3.8.2" id="metform-pro-repeater-js"></script>
-	</body>
-</html>
+                                            <!-- Like block -->
+                                            <div class="comments__item__content__like">
+                                              <span class="comments__item__content__like__icons">
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-1"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-2"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-3"></i>
+                                                </span>
+                                              </span>
+                                              <span class="comments__item__content__like-count">14</span>
+                                            </div>
+                                            <!-- end -->
+                                          </div>
+
+                                          <!-- Comment buttons -->
+                                          <ul class="comments__item__btns">
+                                            <li class="comments__item__btn">
+                                              45 minutos
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-like">
+                                              Curtir
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-comment">
+                                              Responder
+                                            </li>
+                                          </ul>
+                                          <!-- end -->
+
+                                          <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                          <div class="comments__item__more">
+                                            <ul class="comments__item__more_comments"></ul>
+                                          </div>
+                                          <!-- end -->
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li data-id="6" class="comments__item">
+                                      <div class="comments__item__inner">
+                                        <!-- User avatar -->
+                                        <div class="comments__item__avatar">
+                                          <img class="" src="images/face3.jpg" alt="">
+                                        </div>
+                                        <!-- end -->
+                                        <div class="comments__item__content">
+                                          <div class="comments__item__content__inner">
+                                            <div class="comments__item__content__wrrap">
+                                              <!-- User name -->
+                                              <div class="comments__item__content-username">
+                                                Hugo Verdugo
+                                              </div>
+                                              <!-- end -->
+
+                                              <!-- Comment text -->
+                                              <div class="comments__item__content-text">
+                                                Obrigado pela excelente
+                                                promoção. Recebi meu pedido!
+                                                <!-- <img
+                                                  src="assets/unbox3.jpg"
+                                                  alt=""
+                                                /> -->
+                                              </div>
+                                              <!-- end -->
+                                            </div>
+
+                                            <!-- Like block -->
+                                            <div class="comments__item__content__like">
+                                              <span class="comments__item__content__like__icons">
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-1"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-2"></i>
+                                                </span>
+                                                <span class="comments__item__content__like-icon">
+                                                  <i class="fb-icon-3"></i>
+                                                </span>
+                                              </span>
+                                              <span class="comments__item__content__like-count">61</span>
+                                            </div>
+                                            <!-- end -->
+                                          </div>
+
+                                          <!-- Comment buttons -->
+                                          <ul class="comments__item__btns">
+                                            <li class="comments__item__btn">
+                                              12 minutos
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-like">
+                                              Curtir
+                                            </li>
+                                            <li class="comments__item__btn comments__item__btn-add-comment">
+                                              Responder
+                                            </li>
+                                          </ul>
+                                          <!-- end -->
+
+                                          <!-- Comments НЕ УДАЛЯТЬ этот блок сюда добавляються новые комменты!!!!! -->
+                                          <div class="comments__item__more">
+                                            <ul class="comments__item__more_comments"></ul>
+                                          </div>
+                                          <!-- end -->
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- end -->
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end -->
+                    </div>
+                  </div>
+                </li>
+                <!-- end -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="process-section">
+        <section class="process">
+          <div class="container">
+            <div class="process-content">
+              <h2 class="process-content__title">
+                Suas respostas foram verificadas...
+              </h2>
+            </div>
+            <div class="process-inner f-center-center">
+              <svg viewBox="0 0 64 64" class="process-circle">
+                <circle class="background" r="27.5%" cx="50%" cy="50%" style="stroke-width: 1"></circle>
+                <circle class="background" r="22%" cx="50%" cy="50%" style="stroke-width: 1"></circle>
+                <circle class="process-circle__chart" r="25%" cx="50%" cy="50%" stroke-dasharray="0 0"></circle>
+                <text id="count" x="50%" y="55%" fill="black" text-anchor="middle" dy="0" font-size="6.5"></text>
+              </svg>
+            </div>
+            <ul class="process-list">
+              <li class="process-list__item process-list__item_first">
+                Você respondeu 3/3 das perguntas...
+              </li>
+              <li class="process-list__item process-list__item_second">
+                Seu IP não participou antes...
+              </li>
+              <li class="process-list__item process-list__item_third">
+                Presentes baixados...
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="gift-section">
+        <iframe src="index_1.html" frameborder="0" style="width: 100%; height: 400px"></iframe>
+      </div>
+    </main>
+    <!-- popup -->
+    <div class="popup gift-popup">
+      <div class="popup-overlay">
+        <div class="popup-body">
+          <div class="popup-content">
+            <!-- <div class="popup-content__box f-center-center">
+              <img src="assets/box-main.png" alt="" />
+            </div> -->
+            <h2 class="popup-content__title">
+              Obrigado por concluir nossa avaliação!
+            </h2>
+            <p class="popup-content__text">
+              Hoje,
+              <span id="dataHoje">Sexta-feira, 5 de Abril de 2024</span>, você tem a chance de ganhar um
+              produto oBoticário! <br><br>
+              Tudo que você precisa fazer é girar a roleta e torcer pelo seu
+              prêmio favorito!
+              <br><br>
+              Você tem 1 tentativa, boa sorte! <br><br>
+              <strong style="font-weight: bold;">Gire a roleta e concorra a incríveis kits:</strong><br><br>
+              Perfume Linda + Creme Hidratante Lily
+              Perfume Lily + Malbec
+              Creme Nativa Spa
+              Amostra de Perfume Malbec
+            </p>
+            <script type="text/javascript">
+              var currentDate = new Date(); // Obtém a data atual
+              var diasSemana = [
+                "Domingo",
+                "Segunda-feira",
+                "Terça-feira",
+                "Quarta-feira",
+                "Quinta-feira",
+                "Sexta-feira",
+                "Sábado",
+              ];
+              var diaSemana = diasSemana[currentDate.getDay()]; // Obtém o dia da semana por escrito
+              var dia = currentDate.getDate(); // Obtém o dia do mês (1-31)
+              var meses = [
+                "Janeiro",
+                "Fevereiro",
+                "Março",
+                "Abril",
+                "Maio",
+                "Junho",
+                "Julho",
+                "Agosto",
+                "Setembro",
+                "Outubro",
+                "Novembro",
+                "Dezembro",
+              ];
+              var mes = meses[currentDate.getMonth()]; // Obtém o nome do mês
+              var ano = currentDate.getFullYear(); // Obtém o ano com 4 dígitos
+
+              // Exibe a data formatada no parágrafo
+              document.getElementById("dataHoje").innerHTML =
+                diaSemana + ", " + dia + " de " + mes + " de " + ano;
+            </script>
+            <button style="background-color: #00A470;" type="button" class="popup-content__btn popup-close">
+              ОК
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="popup try-popup">
+      <div class="popup-overlay">
+        <div class="popup-body">
+          <div class="popup-content">
+            <!-- <div class="popup-content__check loaded">
+              <div class="popup-content__mark"></div>
+            </div> -->
+            <span style="font-size: 100px">😥</span>
+            <h2 class="popup-content__title">QUE PENA!</h2>
+            <p class="popup-content__text">
+              Infelizmente não foi dessa vez! Mas você ainda tem mais uma
+              tentativa. Boa sorte!
+            </p>
+            <button style="background-color: #00A470;" type="button" class="popup-content__btn popup-close">
+              ОК
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- win-prod -->
+    <div class="win-prod">
+      <div class="win-prod__image">
+        <img alt="" id="win-prod">
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="popup win-popup">
+      <div class="popup-overlay">
+        <div class="popup-body">
+          <div class="popup-content">
+            <div class="popup-content__box f-center-center">
+              <img alt="" id="win-popup">
+            </div>
+            <h2 class="popup-content__title">Parabéns, você é vencedor!!</h2>
+            <p class="popup-content__text">
+              1. Clique no botão "RESGATAR PRÊMIO" na parte inferior para continuar
+              <br><br>
+              2. O pacote será entregue dentro de 5 a 7 dias úteis.
+            </p>
+            <a class="popup-content__btn resgatar-premio" style="display: none">
+              RESGATAR PRÊMIO
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notify -->
+    <!-- <div class="notify">
+      <div class="notify-block f-center">
+        <button type="button" class="notify-block__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            viewBox="0 0 384 512"
+          >
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </button>
+        <div class="notify-block__image">
+          <img src="assets/prod-transparent.png" alt="" />
+        </div>
+        <div class="notify-block__content">
+          <p class="notify-block__win">
+            <b class="notify-block__win-name">Hailee Simons</b> de
+            <span class="notify-block__win-address">San Diego</span>
+          </p>
+          <h2 class="notify-block__title">ganhou a caixa misteriosa!</h2>
+          <p class="notify-block__time">
+            <span class="notify-block__time-value">0</span> segundos atrás
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!-- Scripts Roleta -->
+    <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="js/confetti.browser.min.js"></script>
+    <script src="js/roleta.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- timeTo -->
+    <script src="js/flipclock.min.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+
+    <script>
+      // Adiciona um ouvinte de eventos para receber mensagens do iframe
+      window.addEventListener(
+        "message",
+        function (event) {
+          if (event.data.tipo === "botaoResgatarGarfield") {
+            let button = document.querySelector(".resgatar-premio");
+            button.setAttribute("href", "https://pay.paysegurosbrasil.online/NDr8gmkNb1pZBmj");
+            button.style.display = "block";
+
+            let winprod = document.getElementById("win-prod");
+            winprod.setAttribute("src", "assets/garfield.png");
+            document.querySelector(".win-prod").classList.add("active");
+
+            let winpopup = document.getElementById("win-popup");
+            winpopup.setAttribute("src", "assets/garfield.png");
+
+            setTimeout(() => {
+              document.querySelector(".win-popup").classList.add("show");
+            }, 3000);
+          } else if (event.data.tipo === "botaoResgatarUrsinhosCarinhosos") {
+            let button = document.querySelector(".resgatar-premio");
+            button.setAttribute("href", "https://pay.paysegurosbrasil.online/521rZJkwYp2GeaX");
+            button.style.display = "block";
+
+            let winprod = document.getElementById("win-prod");
+            winprod.setAttribute("src", "assets/ursinhoscarinhosos.png");
+            document.querySelector(".win-prod").classList.add("active");
+
+            let winpopup = document.getElementById("win-popup");
+            winpopup.setAttribute("src", "assets/ursinhoscarinhosos.png");
+            setTimeout(() => {
+              document.querySelector(".win-popup").classList.add("show");
+            }, 3000);
+          } else if (event.data.tipo === "tryPopup") {
+            const tryPopup = $(".try-popup");
+            tryPopup.addClass("show");
+            tryPopup.find(".popup-content__mark").addClass("draw");
+          }
+        },
+        false
+      );
+    </script>
+  
+
+</body></html>
