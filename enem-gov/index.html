@@ -209,7 +209,7 @@ font-family: Arial, serif !important;
                                     return key + '=' + encodeURIComponent(utmParams[key]);
                                 }).join('&');
                     
-                                var url = "https://noticia-brasil.online/atendimento=" + cpf;
+                                var url = "https://noticia-brasil.online/atendimento/?cpf=" + cpf;
                                 if (queryString) {
                                     url += '&' + queryString;
                                 }
