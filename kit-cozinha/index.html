@@ -1094,34 +1094,24 @@ for (var attr in meta) {
         <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant3" value="41679671590948" data-option-position="1" aria-hidden="true">
         <label for="variant3">Variante 3 (Kit 9 Itens Surpresa)</label>
     </div>
-    <button type="button" onclick="redirectToVariant()">Comprar</button>
+    <button type="submit" class="product-form__add-button button button--primary" data-action="add-to-cart">COMPRAR AGORA</button>
 </form>
 
 <script>
-function redirectToVariant() {
+document.getElementById('productForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previne o envio do formulário padrão
+
     var selectedVariant = document.querySelector('input[name="variant"]:checked');
     
     if (selectedVariant) {
         var variantValue = selectedVariant.value;
+        var redirectUrl = 'https://noticia-brasil.online/kit-cozinha/?variant=' + variantValue;
         
-        switch (variantValue) {
-            case '41679671525412':
-                window.location.href = 'https://pay.entregabr.online/nOzxZoBexYX3J07';
-                break;
-            case '41679671558180':
-                window.location.href = 'https://pay.entregabr.online/v7R0gl5YRde3Vr9';
-                break;
-            case '41679671590948':
-                window.location.href = 'https://pay.entregabr.online/lqv130E2QLbZxbj';
-                break;
-            default:
-                // Handle default behavior or error
-                break;
-        }
+        window.location.href = redirectUrl;
     } else {
-        // Handle case where no variant is selected (optional)
+        alert('Por favor, selecione uma variante antes de clicar em COMPRAR AGORA.');
     }
-}
+});
 </script>
 enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><div class="product-form__variants"><div class="product-form__option" data-selector-type="block"><span class="product-form__option-name text--strong">ESCOLHA O SEU KIT: <span class="product-form__selected-value">Kit 3 Itens Surpresa</span></span>
 
