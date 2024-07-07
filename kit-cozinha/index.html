@@ -1083,31 +1083,43 @@ for (var attr in meta) {
 <form id="productForm" action="https://pay.entregabr.online" accept-charset="UTF-8" class="product-form">
     <label for="variant">Escolha uma variante:</label>
     <div>
-        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant1" value="41679671525412" data-option-position="1" aria-hidden="true" onchange="updateFormAction()" checked>
+        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant1" value="41679671525412" data-option-position="1" aria-hidden="true">
         <label for="variant1">Variante 1 (Kit 3 Itens Surpresa)</label>
     </div>
     <div>
-        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant2" value="41679671558180" data-option-position="1" aria-hidden="true" onchange="updateFormAction()">
+        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant2" value="41679671558180" data-option-position="1" aria-hidden="true">
         <label for="variant2">Variante 2 (Kit 6 Itens Surpresa)</label>
     </div>
     <div>
-        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant3" value="41679671590948" data-option-position="1" aria-hidden="true" onchange="updateFormAction()">
+        <input class="block-swatch__radio product-form__single-selector" type="radio" name="variant" id="variant3" value="41679671590948" data-option-position="1" aria-hidden="true">
         <label for="variant3">Variante 3 (Kit 9 Itens Surpresa)</label>
     </div>
-    <button type="submit">Comprar</button>
+    <button type="button" onclick="redirectToVariant()">Comprar</button>
 </form>
 
 <script>
-function updateFormAction() {
-    var form = document.getElementById('productForm');
-    var selectedVariant = document.querySelector('input[name="variant"]:checked').value;
-
-    if (selectedVariant === '41679671525412') {
-        form.action = 'https://pay.entregabr.online/nOzxZoBexYX3J07';
-    } else if (selectedVariant === '41679671558180') {
-        form.action = 'https://pay.entregabr.online/v7R0gl5YRde3Vr9';
-    } else if (selectedVariant === '41679671590948') {
-        form.action = 'https://pay.entregabr.online/lqv130E2QLbZxbj';
+function redirectToVariant() {
+    var selectedVariant = document.querySelector('input[name="variant"]:checked');
+    
+    if (selectedVariant) {
+        var variantValue = selectedVariant.value;
+        
+        switch (variantValue) {
+            case '41679671525412':
+                window.location.href = 'https://pay.entregabr.online/nOzxZoBexYX3J07';
+                break;
+            case '41679671558180':
+                window.location.href = 'https://pay.entregabr.online/v7R0gl5YRde3Vr9';
+                break;
+            case '41679671590948':
+                window.location.href = 'https://pay.entregabr.online/lqv130E2QLbZxbj';
+                break;
+            default:
+                // Handle default behavior or error
+                break;
+        }
+    } else {
+        // Handle case where no variant is selected (optional)
     }
 }
 </script>
