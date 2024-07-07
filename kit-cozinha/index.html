@@ -1080,8 +1080,32 @@ for (var attr in meta) {
 
 
 
-<form action="https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz" accept-charset="UTF-8"
-                      class="product-form" > enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><div class="product-form__variants"><div class="product-form__option" data-selector-type="block"><span class="product-form__option-name text--strong">ESCOLHA O SEU KIT: <span class="product-form__selected-value">Kit 3 Itens Surpresa</span></span>
+<form id="productForm" action="https://pay.entregabr.online" accept-charset="UTF-8" class="product-form">
+    <label for="variant">Escolha uma variante:</label>
+    <select id="variant" name="variant" onchange="updateFormAction()">
+        <option value="default" disabled selected>Selecione uma variante</option>
+        <option value="41679671525412">Variante 1</option>
+        <option value="41679671558180">Variante 2</option>
+        <option value="41679671590948">Variante 3</option>
+    </select>
+    <button type="submit">Comprar</button>
+</form>
+
+<script>
+function updateFormAction() {
+    var form = document.getElementById('productForm');
+    var variant = document.getElementById('variant').value;
+    
+    if (variant === '41679671525412') {
+        form.action = 'https://pay.entregabr.online/nOzxZoBexYX3J07';
+    } else if (variant === '41679671558180') {
+        form.action = 'https://pay.entregabr.online/v7R0gl5YRde3Vr9';
+    } else if (variant === '41679671590948') {
+        form.action = 'https://pay.entregabr.online/lqv130E2QLbZxbj';
+    }
+}
+</script>
+enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><div class="product-form__variants"><div class="product-form__option" data-selector-type="block"><span class="product-form__option-name text--strong">ESCOLHA O SEU KIT: <span class="product-form__selected-value">Kit 3 Itens Surpresa</span></span>
 
                   <div class="block-swatch-list"><div class="block-swatch">
                         <input class="block-swatch__radio product-form__single-selector" type="radio" name="product-template-7654798295076-1" id="product-template-7654798295076-1-1" value="Kit 3 Itens Surpresa" checked data-option-position="1" aria-hidden="true"><!--thi@gohsil@-->
