@@ -493,7 +493,7 @@ function submitForm(questionNumber) {
     var urlObj = new URL(currentUrl);
     var queryParams = urlObj.search;
 
-    window.location.href = './loja/celulares-e-smartphones/' + queryParams;
+    window.location.href = './loja/' + queryParams;
     }, 3000);
   } else {
     // Redireciona diretamente se não houver mensagem de agradecimento
@@ -501,7 +501,7 @@ function submitForm(questionNumber) {
     var urlObj = new URL(currentUrl);
     var queryParams = urlObj.search;
 
-    window.location.href = './loja/celulares-e-smartphones/' + queryParams;
+    window.location.href = './loja/' + queryParams;
   }
 
   return false; // Impede o envio do formulário
