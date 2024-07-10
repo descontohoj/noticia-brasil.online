@@ -1,0 +1,29 @@
+.products-grid {
+    margin-bottom: 0 !important; /* Remove margem inferior da lista de produtos */
+}
+
+.page-footer {
+    margin-top: 0 !important; /* Remove margem superior do footer */
+    padding-top: 0 !important; /* Remove o espaçamento interno superior do footer, se necessário */
+}
+
+
+
+.esgotado-button {
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Ajusta o espaçamento para ficar visível sobre a imagem */
+    text-align: center;
+    font-size: 16px;
+    cursor: default;
+    position: absolute; /* Posicionamento absoluto dentro do contêiner relativo */
+    top: 70px; /* Posiciona o rótulo 10px do topo do contêiner */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralizar exatamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Garante que o rótulo fique acima da imagem */
+}
+    
