@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divertidamente 2</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4B1388;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+
+        header {
+            background-color: #4B1388;
+            padding: 10px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Tamanho padrão da logo */
+}
+
+        .icon {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .product-page {
+            background-color: white;
+            padding: 30px;
+            margin: 0px auto;
+            max-width: 1000px;
+            border-radius: 0px;
+
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #3B2A75;
+        }
+        .product-details h1 {
+            margin-top: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4B1388;
+        }
+        .product-details h4 {
+            margin-top: -15px;
+            margin-bottom: 40px;
+            font-size: 1.0em;
+            font-weight: bold;
+            color: black;
+        }
+            .product-details h5 {
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: grey;
+        }
+
+        .price {
+            color: black;
+            font-size: 1.8em;
+            margin: 10px 0;
+            font-weight: bold;
+            margin-top: -15px;
+        }
+        
+         .original-price {
+           text-decoration: line-through;
+           color: #999;
+           font-size: 1em;
+           margin: 20px 0;
+           margin-top: 20px;
+          }
+
+        .installments {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 20px;
+            font-weight: bold;
+             margin-top: -5px;
+        }
+
+        .buy-button {
+            background-color: #52DB54;
+            color: white;
+            border: none;
+            padding: 15px 80px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .free-shipping-bar {
+            color: black;
+            padding: 0px 0;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .free-shipping-bar .icon {
+            color: black;
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+        
+       .product-rating {
+            color : #FFD700;
+            font-size: 1em;
+            margin-top: -20px;
+        }
+
+        .product-rating i {
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+        .rating-text {
+            color: #666;
+            font-size: 1em;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .buy-button i {
+            margin-right: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #52DB54;
+            transform: scale(1.05);
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #3B2A75;
+            margin: 20px 0;
+        }
+
+        .full-description {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .full-description h3 {
+            color: #3B2A75;
+        }
+
+        .full-description p, .full-description ul {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .full-description img {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #4B1388;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 10px solid #FFD707;
+        }
+.product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            
+        }.site-footer {
+  width: 100%; /* Garante que o footer ocupe toda a largura */
+  position: relative;
+  overflow: hidden; /* Impede que o conteúdo interno cause rolagem */
+}
+
+/* Estilize o container da imagem do footer */
+.footer-image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* Impede que o conteúdo interno cause rolagem */
+}
+
+.footer-image-container img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaço em branco abaixo da imagem */
+
+}
+        .footer-links {
+            margin: 0px 0;
+        }
+       
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons i {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #FF0B80;
+        }
+
+        .security-seals {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .security-seals img {
+            margin: 0 10px;
+            max-height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .security-seals img:hover {
+            transform: scale(1.1);
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #FFD707;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-top:hover {
+            background-color: #FFD707;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopButton = document.createElement("div");
+            backToTopButton.className = "back-to-top";
+            backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            document.body.appendChild(backToTopButton);
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            });
+
+            backToTopButton.addEventListener("click", function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars icon"></i>
+        <img src="images/Divertidamente.png" alt="Logo" class="logo">
+        <i class="fas fa-search icon"></i>
+        
+    </header>
+<div style="background-color: #FFD707; padding: 10px 0; width: 100%; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <div id="info-bar" style="display: flex; justify-content: center; align-items: center; white-space: nowrap; animation: marquee 20s linear infinite;">
+    <span style="display: flex; align-items: center; font-size: 16px; color: #4B1388; padding: 0 50px; font-weight: bold;">
+      <img src="" style="width: 20px; height: 20; margin-right: 8px;" fill="#f39c12" viewbox="0 0 16 16">
+        <path d="M3.5 8A3.5 3.5 0 1 1 7 11.5H3.5a.5.5 0 0 1 0-1H7a2.5 2.5 0 0 0 0-5H3.5a.5.5 0 0 1 0-1H7a3.5 3.5 0 1 1 0 7H3.5z">
+       ÚLTIMAS UNIDADES - FRETE GRÁTIS!
+   
+    </path></span>
+  </div>
+</div>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+
+
+
+    <main>
+        <div class="product-page">
+            <div class="product-image">
+                <img src="images/D2.jpg" alt="Divertidamente">
+            </div>
+            <div class="product-details">
+             <h1>CAIXA DE BONECOS DIVERTIDAMENTE 2</h1>
+              
+                 <h4>Todos os personagens inclusos + 1 Surpresa</h4>
+                <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="rating-text"> 4.9/5.0 - 8,943 Avaliações</span>
+        </div>
+                <p class="original-price">R$ 199,90</p>
+                <p class="price">R$ 39,90</p>
+                <h5>Parcele em até 10x de R$ 3,90</h5>
+                <a href="https://pay.divertidamente2.com/a6pVgd4K0Q6gk7B" target="_blank">
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i>COMPRAR AGORA</button></a>
+
+   
+
+    <div class="free-shipping-bar">
+   
+    </div>
+
+
+
+                <div class="divider"></div>
+                <div class="full-description">
+
+                    <h3>Descubra a Magia de Divertidamente 2 com as Figuras Colecionáveis Cosbi!</h3>
+                    <p>Prepare-se para mergulhar no mundo encantador de “Divertidamente 2” com nossa incrível coleção de figuras colecionáveis Cosbi! Cada caixa surpresa traz um universo de emoções, trazendo os adoráveis personagens do filme para mais perto de você.</p>
+                     <img src="images/D3.jpg" alt="Imagem Descrição">
+               
+                    <ul>
+                        <h3><li>🌟 O Que Está Dentro da Caixa?</li></h3><p>Dentro da nossa elegante caixa, você encontrará várias caixinhas pequenas, cada uma contendo uma figura colecionável surpresa de “Divertidamente 2”. Desde chaveiros adoráveis até bonequinhos detalhados, cada item é uma peça única que vai encantar colecionadores e fãs de todas as idades. E você ainda ganha uma bolinha de cada emoção exclusiva.</p>
+                        <h3><li>🎁 Perfeito para Presentear</li></h3><p>Quer surpreender alguém especial? Nossa coleção Cosbi é o presente perfeito! Cada figura é cuidadosamente embalada, tornando a experiência de abrir cada caixinha ainda mais emocionante. É um presente que vai trazer sorrisos e criar memórias inesquecíveis.</p>
+                        <h3><li>💎 Detalhes Impecáveis</li></h3><p>As figuras colecionáveis Cosbi são feitas com atenção aos mínimos detalhes, capturando perfeitamente as expressões e personalidades dos personagens de “Divertidamente 2”. Feitas com materiais de alta qualidade, essas figuras são duráveis e ideais para exposição.</p>
+                     
+                    </ul>
+                    
+                 
+                    
+                    <img src="images/D1.jpg" alt="Imagem Descrição">
+                  
+                  
+                    <ul>
+                        <h3><li>📦 Coleção Exclusiva</li></h3><p>Nossa coleção é limitada e exclusiva, então não perca a chance de ter esses itens únicos em sua casa. Complete sua coleção ou comece uma nova com as figuras mais adoráveis de “Divertidamente 2”.</p>
+                        <h3><li>🌈 Diversão e Emoção em Cada Caixinha</li></h3><p>A experiência de abrir cada caixinha é repleta de suspense e alegria. Quem será que você vai encontrar? Junte-se �&nbsp; diversão e descubra todas as emoções de “Divertidamente 2” em cada figura Cosbi.</p>
+                       <p>Adquira já a sua Caixa de Figuras Colecionáveis Cosbi de Divertidamente 2 e traga a magia do filme para a sua vida!</p>
+                     
+                    </ul>
+                    
+                
+                   
+        
+                
+                  
+                    <a href="https://pay.divertidamente2.com/a6pVgd4K0Q6gk7B" target="_blank">
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i>COMPRAR AGORA</button>
+                </a></div><a href="https://pay.divertidamente2.com/a6pVgd4K0Q6gk7B" target="_blank">
+                
+                </a>
+                
+            </div>
+        </div>
+    </main>
+
+   <footer>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="security-seals">
+            <img src="images/A1.png" alt="Selo de Segurança 1">
+            <img src="images/A2.png" alt="Selo de Segurança 2">
+            <img src="images/A3.png" alt="Selo de Segurança 3">
+        </div>
+        <p>© 2024 Divertidamente. Todos os direitos reservados.</p>
+    </footer>
+
+
+<div class="back-to-top"><i class="fas fa-arrow-up"></i></div></body></html>
