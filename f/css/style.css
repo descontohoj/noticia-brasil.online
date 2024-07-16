@@ -1,0 +1,439 @@
+ /* Typography (heading) */
+ @font-face {
+    font-family: Archivo;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/archivo_n6.1c7c5a103e7ce5904146bdc8185bb04724ca217a.woff2") format("woff2"),
+         url("../fonts/archivo_n6.73bf910681d1d187dcf6155c4f8a2c6fe79ac7be.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: Archivo;
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    src: url("../fonts/archivo_i6.243682eac95afbeca7583f60c388b9a35a735280.woff2") format("woff2"),
+         url("../fonts/archivo_i6.502cd191c9502df39e7033e0cdf815ae5008ab20.woff") format("woff");
+  }
+  
+  /* Typography (body) */
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2") format("woff2"),
+         url("../fonts/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/helvetica_o4.f9832a0fc1ee8fc5a359636e410d6941e1e4ca03.woff2") format("woff2"),
+         url("../fonts/helvetica_o4.0063286aec443697ebae04eeb9c78b820f9f7805.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2") format("woff2"),
+         url("../fonts/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/helvetica_o7.215fd4ca1a06214fa01e44328a1992c977700ea2.woff2") format("woff2"),
+         url("../fonts/helvetica_o7.b0a2026ae2aa64d060f9ce0ee1b3c3c1aa21bf88.woff") format("woff");
+  }
+  
+  :root {--frete-buscar-btn: #000000;
+    --frete-buscar-fonte: #fff;
+     --frete-buscar-localizacao: #36b376;
+     --frete-buscar-precos: #36b376;
+  
+      --box-primaria: #ffffff;
+      --box-sec: #8f8f8f;
+      --box-titulo: #101010;
+  
+   --relampago1: #fffbac;
+       --relampago2: #dca201;
+       --relampago3: #fef777;
+  --relampago4: #000;
+  
+  
+      
+  --bandeiras-w-mobile: 11%;
+    --bandeiras-w-desktop: 10%;
+     --bandeiras-t-fonte: 12px;
+  
+  
+  --fontenavegadesk: 16px;
+      --fontenavegam: 16px;
+  
+  
+  
+  --fonteprodinicial: 16px;
+  --fonteprodinicialm: 16px;
+  
+      --fonteprod: 20px;
+  --fonteprodm: 20px;
+  
+  --fontebotcompra: 16px;
+  --fontebotcompram: 16px;
+      
+  --bandeiras-w-mobilec: 14%;
+    --bandeiras-w-desktopc: 14%;
+     --bandeiras-t-fontec: 12px;
+      
+      --logo-correcao-m: -12px;
+   --logo-correcao-d: -9px;
+    
+      --arredonda-box: 2px;
+  
+      --color-parcel-prod          : #000000;
+       --preco-prod: 27px;
+    --preco-prodm: 29px;
+   --borda-descont-pro: 4px;
+      --desconto-fonte-label: 12px;
+  
+    --footer-backg: #ffffff;
+  
+    --footer-font: #262424;
+  
+      --varianteseletor: #0fcaf2;
+  
+       --setaslidefundo: #e2a696;
+   --setaslidefonte: #fff;
+       --setaslideborda: #e2a696;
+  
+      --setaslidebordas: 100px;
+      
+  --pix-envio-bordageral               : 7px;
+  --pix-envio-bordaenvio               : 15px;
+    --pix-envio-tfonte               : 13px;
+   --pix-envio-tsimb              : 18px;
+  
+       --logo-ps-m              : 0px;
+      --logo-pi-m              : 0px;
+      --logo-ps-d              : 0px;
+      --logo-pi-d              : 0px;
+  
+      --anuncio-alturam              : 38px;
+      --anuncio-alturad              : 30px;
+      --anuncio-fontem              : 14px;
+      --anuncio-fonted              : 15px;
+    
+  --pix-envio-fundo              : #f1f1f1;
+  --pix-envio-textdesc              : #201F1F;
+  --pix-envio-textnopix              : #5E5E5E;
+  --pix-envio-simb              : #36b376;
+  --pix-envio-enviofundo              : #36b376;
+  --pix-envio-enviotexto              : #fff;
+  
+  
+  
+      --p1-radius          : 10px;
+      --p1-l-radius          : 10px;
+      --p1-ms           : 5px;
+      --p1-mi           : 5px;
+      --p1-fundo           : #f7f7f7;
+      --p1-borda           : #ffffff;
+      --p1-cor-campo          : #000;
+      --p1-cor-aviso          : #7b1e1e;
+      --p1-cor-holder           : #9c9c9c;
+  
+      
+  
+  --product-truck-background         : #000000;
+      --color-frete-fundo                : #fff;
+      --product-truck-color              : #fff;
+      --product-free-shipping-color      : #000;
+      --product-localization-color       : #36b376;
+      --product-icon-return-color        : ;
+      --product-return-color             : ;
+  
+      
+  --popup_button_right         : px; 
+  --popup_size-color           : #2b3948; 
+  --popup_text_medidas-color   : #ffffff; 
+  --popup_border               : 7px;  
+  --popup_show-color           : #ffffff;  
+  --popup_text-color           : #000;             
+  --icon_popup_image:          : ; 
+  --popup_text_titulo:          : #000; 
+      
+      --alt-bot-qnt: 55px;
+    --borda-bot-qnt: 7px;
+    --borda-atv-parcelamento: 4px;
+      --borda-atv-parcelamento2: #dfdfdf;
+    --fonte-wht: 15px;
+  
+     --fonte1m-colecao: 24px;
+     --fonte1d-colecao: 30px;
+      --selito-lar: 40px;
+  --selito-larm: 42px;
+      --fonte2m-colecao: 26px;
+     --fonte2d-colecao: 30px;
+  
+   --color-bolinha-b: #0fcaf2;
+      --color-bolinha-f: #ffffff;
+  
+  
+   --social-radius :4px;
+      --social-mard :2px;
+      --social-mari :2px;
+      --social-bord-cor :#dedede;
+       --social-icon-cor :#0e0e0e;
+      --social-icon-back :#ffffff;
+  
+  --continuar-fundo :#fff;
+      --continuar-texto :#000;
+      --continuar-borda :#000;
+      
+  
+  --cookie-fontegeral : #000;
+  --cookie-fundogeral : #ededed;
+  --cookie-aceitarfundo : #008026;
+  --cookie-aceitarfonte : #fff;
+  --cookie-recusarfundo : #fa0000;
+  --cookie-recusarfonte : #fff;
+  --cookie-fonte : 14px;
+  
+      
+      --color-primary-parcelamento: #1d1d1d;
+      --color-secondary-parcelamento: #565c69;
+      --color-terciary-parcelamento: #b6bbc2;
+      --color-active-parcelamento: var(--color-terciary-parcelamento);
+      --color-quart-parcelamento: #ffffff;
+      --color-quint-parcelamento: #000000;
+  
+      --wpp_cor1: #36b376;
+      --wpp_cor2: #ffffff;
+      --wpp_cor3: #36b376;
+      --wpp_cor4: #ffffff;
+       --wpp_cor5: #36b376;
+      --wpp_spc: 0.2pt;
+  
+      --label-desconto: #0fcaf2;
+      --fonte-desconto: #fff;
+  
+      --back-vendidos: #f5f5f5;
+      --fonte-vendidos: #a7a5a5;
+      --back-exclusivo: #0fcaf2;
+      --fonte-exclusivo: #000;
+  
+      --back-exclusivo2: #000;
+      --fonte-exclusivo2: #FFF;
+  
+  
+  --color-barcopy-fundo: #f0f0f0;
+  --color-barcopy-fonte: #282828;
+      
+        --color-primary-whatsapp: #36b376;
+       --color-secundary-whatsapp: #ffffff;
+      --color-terciary-whatsapp: #fefefe;
+      --color-accent-whatsapp: #fff;
+  
+      --colorp-progress: #f1f1f1;
+      --colors-progress: #e2a696;
+  
+      --alt-progress: 10px;
+      --font-progress: 13px;
+      
+      --heading-color: 40, 40, 40;
+      --text-color: 40, 40, 40;
+      --background: 255, 255, 255;
+      --secondary-background: 245, 245, 245;
+      --border-color: 223, 223, 223;
+      --border-color-darker: 169, 169, 169;
+      --success-color: 46, 158, 123;
+      --success-background: 213, 236, 229;
+      --error-color: 222, 42, 42;
+      --error-background: 253, 240, 240;
+      --primary-button-background: 59, 174, 138;
+      --primary-button-text-color: 255, 255, 255;
+      --secondary-button-background: 0, 0, 0;
+      --secondary-button-text-color: 255, 255, 255;
+      --product-star-rating: 246, 164, 41;
+      --product-on-sale-accent: 51, 51, 51;
+      --product-sold-out-accent: 111, 113, 155;
+      --product-custom-label-background: 19, 19, 19;
+      --product-custom-label-text-color: 255, 255, 255;
+      --product-custom-label-2-background: 243, 255, 52;
+      --product-custom-label-2-text-color: 0, 0, 0;
+      --product-low-stock-text-color: 222, 42, 42;
+      --product-in-stock-text-color: 46, 158, 123;
+      --loading-bar-background: 40, 40, 40;
+  
+      /* We duplicate some "base" colors as root colors, which is useful to use on drawer elements or popover without. Those should not be overridden to avoid issues */
+      --root-heading-color: 40, 40, 40;
+      --root-text-color: 40, 40, 40;
+      --root-background: 255, 255, 255;
+      --root-border-color: 223, 223, 223;
+      --root-primary-button-background: 59, 174, 138;
+      --root-primary-button-text-color: 255, 255, 255;
+  
+      --base-font-size: 17px;
+      --heading-font-family: Archivo, serif;
+      --heading-font-weight: 600;
+      --heading-font-style: normal;
+      --heading-text-transform: normal;
+      --text-font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+      --text-font-weight: 400;
+      --text-font-style: normal;
+      --text-font-bold-weight: 700;
+  
+      /* Typography (font size) */
+      --heading-xxsmall-font-size: 11px;
+      --heading-xsmall-font-size: 11px;
+      --heading-small-font-size: 13px;
+      --heading-large-font-size: 40px;
+      --heading-h1-font-size: 40px;
+      --heading-h2-font-size: 32px;
+      --heading-h3-font-size: 28px;
+      --heading-h4-font-size: 26px;
+      --heading-h5-font-size: 22px;
+      --heading-h6-font-size: 18px;
+  
+      /* Control the look and feel of the theme by changing radius of various elements */
+      --button-border-radius: 10px;
+      --block-border-radius: 32px;
+      --block-border-radius-reduced: 16px;
+      --color-swatch-border-radius: 100%;
+  
+      /* Button size */
+      --button-height: 48px;
+      --button-small-height: 40px;
+  
+      /* Form related */
+      --form-input-field-height: 48px;
+      --form-input-gap: 16px;
+      --form-submit-margin: 24px;
+  
+      /* Product listing related variables */
+      --product-list-block-spacing: 32px;
+  
+      /* Video related */
+      --play-button-background: 255, 255, 255;
+      --play-button-arrow: 40, 40, 40;
+  
+      /* RTL support */
+      --transform-logical-flip: 1;
+      --transform-origin-start: left;
+      --transform-origin-end: right;
+  
+      /* Other */
+      --zoom-cursor-svg-url: url(cdn/shop/t/2/assets/zoom-cursor.svg);
+      --arrow-right-svg-url: url(cdn/shop/t/2/assets/arrow-right.svg);
+      --arrow-left-svg-url: url(cdn/shop/t/2/assets/arrow-left.svg);
+  
+      /* Some useful variables that we can reuse in our CSS. Some explanation are needed for some of them:
+         - container-max-width-minus-gutters: represents the container max width without the edge gutters
+         - container-outer-width: considering the screen width, represent all the space outside the container
+         - container-outer-margin: same as container-outer-width but get set to 0 inside a container
+         - container-inner-width: the effective space inside the container (minus gutters)
+         - grid-column-width: represents the width of a single column of the grid
+         - vertical-breather: this is a variable that defines the global "spacing" between sections, and inside the section
+                              to create some "breath" and minimum spacing
+       */
+      --container-max-width: 1600px;
+      --container-gutter: 24px;
+      --container-max-width-minus-gutters: calc(var(--container-max-width) - (var(--container-gutter)) * 2);
+      --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+      --container-outer-margin: var(--container-outer-width);
+      --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+  
+      --grid-column-count: 10;
+      --grid-gap: 24px;
+      --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+  
+      --vertical-breather: 48px;
+      --vertical-breather-tight: 48px;
+  
+      /* Shopify related variables */
+      --payment-terms-background-color: #ffffff;
+    }
+  
+    @media screen and (min-width: 741px) {
+      :root {
+        --container-gutter: 40px;
+        --grid-column-count: 20;
+        --vertical-breather: 64px;
+        --vertical-breather-tight: 64px;
+  
+        /* Typography (font size) */
+        --heading-xsmall-font-size: 13px;
+        --heading-small-font-size: 14px;
+        --heading-large-font-size: 58px;
+        --heading-h1-font-size: 58px;
+        --heading-h2-font-size: 44px;
+        --heading-h3-font-size: 36px;
+        --heading-h4-font-size: 28px;
+        --heading-h5-font-size: 22px;
+        --heading-h6-font-size: 20px;
+  
+        /* Form related */
+        --form-input-field-height: 52px;
+        --form-submit-margin: 32px;
+  
+        /* Button size */
+        --button-height: 52px;
+        --button-small-height: 44px;
+      }
+    }
+  
+    @media screen and (min-width: 1200px) {
+      :root {
+        --vertical-breather: 80px;
+        --vertical-breather-tight: 64px;
+        --product-list-block-spacing: 48px;
+  
+        /* Typography */
+        --heading-large-font-size: 72px;
+        --heading-h1-font-size: 62px;
+        --heading-h2-font-size: 54px;
+        --heading-h3-font-size: 40px;
+        --heading-h4-font-size: 34px;
+        --heading-h5-font-size: 26px;
+        --heading-h6-font-size: 18px;
+      }
+    }
+  
+    @media screen and (min-width: 1600px) {
+      :root {
+        --vertical-breather: 90px;
+        --vertical-breather-tight: 64px;
+      }
+    }
+  
+    @media(max-width:768px) {
+        .cartoes{
+          max-height: auto;
+          width: var(--bandeiras-w-mobile);
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }  
+        }
+      
+        @media(min-width:769px) {
+         .cartoes{
+          max-height: auto;
+          width: var(--bandeiras-w-desktop);
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+        } 
+       .security__payment p {
+          color: #565656;
+          text-align: center;
+          margin: 10px auto 0;
+          font-size: var(--bandeiras-t-fonte);
+      }
