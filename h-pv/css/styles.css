@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+div#notice {
+    background-color: #001161;
+    text-align: center;
+    padding: 5px;
+    font-family: 'GellixMedium';
+    font-size: 13px;
+    color: #ECEA08;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D3BDD;
+    padding: 10px 0 10px 10px;
+}
+
+nav.navbar > div.menu-icon {
+    padding-left: 3%;
+}
+
+nav.navbar > div.menu-icon > img {
+    height: 5vh;
+}
+
+nav.navbar > div.menu-icon > span {
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+}
+
+nav.navbar > div.menu-icon#back > span {
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+}
+
+img#banner {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'GellixSemiBold';
+    font-size: 24px;
+    color: #5E5E5E;
+    font-weight: bold;
+    margin: 24px 0;
+}
+
+div.bracelet-grid > div.bracelet-item > span {
+    border-radius: 12px;
+    font-size: 13px;
+    padding: 3px 10px 3px 10px;
+}
+
+div.divisoria {
+    width: calc(90%);
+    border-top: 2px solid #B4B4B4;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+div.divisoria2 {
+    width: 90%;
+    left: 2.5%;
+    right: 2.5%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 25px 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'GellixRegular';
+    font-size: 14px;
+    color: #808080;
+    position: relative;
+}
+
+p {
+    font-size: 18px;
+    color: #5E5E5E;
+    font-weight: bold;
+    font-family: 'GellixMedium';
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: -10px;
+    background-color: #E8F1FF;
+}
