@@ -1,0 +1,619 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom_styles.css">
+
+    <title>Havan para você</title>
+</head>
+
+<body>
+    <header>
+        <svg class="icon icon--search" viewBox="0 0 20 21" role="presentation" width="20px">
+            <g stroke-width="2" stroke="#737b97" fill="none" fill-rule="evenodd">
+                <path d="M19 19l-5-5" stroke-linecap="square"></path>
+
+                <circle cx="8.5" cy="8.5" r="7.5"></circle>
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="24" fill="#737b97">
+            <path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"></path>
+            
+            <circle cx="7" cy="22" r="2"></circle>
+            
+            <circle cx="17" cy="22" r="2"></circle>
+        </svg>
+
+        <svg class="icon icon--hamburger-mobile" viewBox="0 0 20 16" role="presentation" width="20px">
+            <path d="M0 14h20v2H0v-2zM0 0h20v2H0V0zm0 7h20v2H0V7z" fill="#737b97" fill-rule="evenodd"></path>
+        </svg>
+    </header>
+
+    <main>
+        <div class="card pergunta01" id="pergunta01" style="display: block;">
+            <div class="card__logo">
+                <img src="images/smart_tv.webp" alt="havan1">
+            </div>
+    
+            <div class="card__satisfacao">
+                <h2>De 0 a 5, qual a probabilidade de você comprar uma Smart TV em nossa loja Havan?</h2>
+    
+                <div class="card__gradeContainer">
+                    <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star1"></i>
+                    </div>
+    
+                    <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star2"></i>
+                    </div>
+    
+                    <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star3"></i>
+                    </div>
+    
+                    <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star4"></i>
+                    </div>
+    
+                    <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star5"></i>
+                    </div>
+                </div>
+    
+                <div class="card__gradeDescricao">
+                    <p>Baixa</p>
+                    <p>Alta</p>
+                </div>
+            </div>
+    
+            <div class="card__resposta">
+                <h2>Considerando sua resposta anterior, qual fator mais influenciaria a sua decisão de compra de uma Smart TV?</h2>
+    
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta1">
+                        <p>Qualidade da tela</p>
+                    </div>
+    
+                    <div class="resposta__grade resposta1">
+                        <p>Preço</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Entre os seguintes tamanhos, qual você considera mais essencial em uma sala moderna?</h2>
+    
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta1-1">
+                        <p>Smart Samsung 42" Polegadas</p>
+                    </div>
+    
+                    <div class="resposta__grade resposta1-1">
+                        <p>Smart Samsung 65" Polegadas</p>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="card__enviarResposta" id="enviarResposta01" disabled="">Enviar resposta</button>
+        </div>
+
+        <div class="card pergunta02" id="pergunta02" style="display: none;">
+            <div class="card__logo">
+                <img src="images/jogo_de_panelas.webp" alt="havan2">
+            </div>
+
+            <div class="card__satisfacao">
+                <h2>De 0 a 5, qual a probabilidade de você comprar um jogo de panelas em nossa loja Havan?</h2>
+
+                <div class="card__gradeContainer">
+                    <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star1"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star2"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star3"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star4"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star5"></i>
+                    </div>
+                </div>
+
+                <div class="card__gradeDescricao">
+                    <p>Baixa</p>
+                    <p>Alta</p>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Considerando sua resposta anterior, quais características de um jogo de panelas mais chama a sua atenção?</h2>
+                
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta2">
+                        <p>Visual arrojado e panela anti aderente</p>
+                    </div>
+
+                    <div class="resposta__grade resposta2">
+                        <p>Facilidade na hora de cozinhar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Entre os seguintes modelos, qual você considera mais essencial em uma cozinha moderna?</h2>
+                
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta2-1">
+                        <p>Tramontina</p>
+                    </div>
+
+                    <div class="resposta__grade resposta2-1">
+                        <p>Brinox</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="card__enviarResposta" id="enviarResposta02" disabled="">Enviar resposta</button>
+        </div>
+
+        <div class="card pergunta03" id="pergunta03" style="display: none;">
+            <div class="card__logo">
+                <img src="images/smartphone.webp" alt="havan3">
+            </div>
+
+            <div class="card__satisfacao">
+                <h2>De 0 a 5, qual a probabilidade de você comprar um Smartphone em nossas lojas Havan?</h2>
+
+                <div class="card__gradeContainer">
+                    <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star1"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star2"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star3"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star4"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star5"></i>
+                    </div>
+                </div>
+
+                <div class="card__gradeDescricao">
+                    <p>Baixa</p>
+                    <p>Alta</p>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Considerando a sua resposta anterior, qual a característica de um Smartphone é mais importante para você?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta3">
+                        <p>Qualidade da tela e da câmera</p>
+                    </div>
+
+                    <div class="resposta__grade resposta3">
+                        <p>Desempenho e duração da bateria</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Entre as seguintes cores, qual cor você compraria?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta3-1">
+                        <p>Preto</p>
+                    </div>
+
+                    <div class="resposta__grade resposta3-1">
+                        <p>Violeta</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="card__enviarResposta" id="enviarResposta03" disabled="">Enviar resposta</button>
+        </div>
+
+        <div class="card pergunta04" id="pergunta04" style="display: none;">
+            <div class="card__logo">
+                <img src="images/notebook.webp" alt="havan4">
+            </div>
+
+            <div class="card__satisfacao">
+                <h2>De 0 a 5, qual a probabilidade de você comprar um Notebook em nossas lojas Havan?</h2>
+
+                <div class="card__gradeContainer">
+                    <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star1"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star2"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star3"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star4"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star5"></i>
+                    </div>
+                </div>
+
+                <div class="card__gradeDescricao">
+                    <p>Baixa</p>
+                    <p>Alta</p>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Considerando sua resposta anterior, qual benefício de um Notebook Samsung mais te atrai?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta4">
+                        <p>Duração da bateria</p>
+                    </div>
+
+                    <div class="resposta__grade resposta4">
+                        <p>Velocidade do processador</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Quando escolhe uma compra, o que você prefere?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta4-1">
+                        <p>Custo benefício</p>
+                    </div>
+
+                    <div class="resposta__grade resposta4-1">
+                        <p>Exclusividade</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="card__enviarResposta" id="enviarResposta04" disabled="">Enviar resposta</button>
+        </div>
+
+        <div class="card pergunta05" id="pergunta05" style="display: none;">
+            <div class="card__logo">
+                <img src="images/tablet.webp" alt="havan5">
+            </div>
+
+            <div class="card__satisfacao">
+                <h2>De 0 a 5, qual a probabilidade de você comprar um Tablet em nossas lojas Havan?</h2>
+
+                <div class="card__gradeContainer">
+                    <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star1"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star2"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star3"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star4"></i>
+                    </div>
+
+                    <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+                        <i class="fa-regular fa-star" id="star5"></i>
+                    </div>
+                </div>
+
+                <div class="card__gradeDescricao">
+                    <p>Baixa</p>
+                    <p>Alta</p>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Considerando sua resposta anterior, qual recurso adicional de um Tablet seria mais útil para você?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta5">
+                        <p>Entrada para chip</p>
+                    </div>
+
+                    <div class="resposta__grade resposta5">
+                        <p>Tamanho da tela</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__resposta">
+                <h2>Entre os seguintes aparelhos, qual você prefere?</h2>
+
+                <div class="resposta__gradeContainer">
+                    <div class="resposta__grade resposta5-1">
+                        <p>Celular</p>
+                    </div>
+
+                    <div class="resposta__grade resposta5-1">
+                        <p>Tablet</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="card__enviarResposta" id="enviarResposta05" disabled="">Enviar resposta</button>
+        </div>
+
+        <div class="card finalizacao" id="finalizacao" style="display: none;">
+            <div class="finalizacao__titulo">
+                <h1>PARABÉNS!</h1>
+
+                <h2>Realize o resgate do seu BRINDE EXCLUSIVO da Havan Para Você.</h2>
+            </div>
+
+            <div class="finalizacao__descricao">
+                <p>Você concluiu a nossa pesquisa exclusiva Havan Para Você, como forma de agradecimento você acaba de ganhar um <b>BRINDE GRÁTIS da nossa queima de estoque!</b> Clique no botão <b>RESGATAR</b> abaixo para receber o seu prêmio exclusivo e aproveitar o Ecossistema Havan!</p>
+                <p>Agradecemos pela sua participação e esperamos que desfrute dos produtos de alta qualidade e praticidade que a Havan oferece.<br><br>Com carinho, <br>Equipe Havan.</p>
+            </div>
+
+            <div class="finalizacao__botao">
+                <a href="https://havan.pesquisa-premiada.com/loja/quiz-havan-pra-voce.online/recompensa/index.html" id="finalizacao__botao">
+                    <button><i class="fa-solid fa-gift"></i> RESGATAR</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="card apresentacao">
+                    <h1>Pesquisa Exclusiva</h1>
+
+                    <h2>Havan para você</h2>
+
+                    <p>Seja bem-vindo(a), pesquisa especial da Havan Para Você, onde a qualidade e a inovação se encontram para transformar a sua experiência! Participe e concorra aos prêmios exclusivos Havan.</p>
+
+                    <span>Está pronto(a) para se juntar ao Ecossistema Havan? Então vamos lá!</span>
+
+                    <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/selectedCard.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new bootstrap.Modal('#modal').show();
+
+            document.querySelectorAll('.resposta__grade').forEach(function (element) {
+                element.addEventListener('click', function () {
+                    if (element.classList.contains('resposta1')) {
+                        document.querySelectorAll('.resposta1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta1.active') && document.querySelector('.resposta__grade.resposta1-1.active')) {
+                            document.getElementById('enviarResposta01').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta01').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta2')) {
+                        document.querySelectorAll('.resposta2').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta2.active') && document.querySelector('.resposta__grade.resposta2-1.active')) {
+                            document.getElementById('enviarResposta02').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta02').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta3')) {
+                        document.querySelectorAll('.resposta3').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta3.active') && document.querySelector('.resposta__grade.resposta3-1.active')) {
+                            document.getElementById('enviarResposta03').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta03').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta4')) {
+                        document.querySelectorAll('.resposta4').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta4.active') && document.querySelector('.resposta__grade.resposta4-1.active')) {
+                            document.getElementById('enviarResposta04').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta04').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta5')) {
+                        document.querySelectorAll('.resposta5').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta5.active') && document.querySelector('.resposta__grade.resposta5-1.active')) {
+                            document.getElementById('enviarResposta05').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta05').classList.add('active');
+                        }
+                    }
+
+                    if (element.classList.contains('resposta1-1')) {
+                        document.querySelectorAll('.resposta1-1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta1.active') && document.querySelector('.resposta__grade.resposta1-1.active')) {
+                            document.getElementById('enviarResposta01').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta01').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta2-1')) {
+                        document.querySelectorAll('.resposta2-1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta2.active') && document.querySelector('.resposta__grade.resposta2-1.active')) {
+                            document.getElementById('enviarResposta02').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta02').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta3-1')) {
+                        document.querySelectorAll('.resposta3-1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta3.active') && document.querySelector('.resposta__grade.resposta3-1.active')) {
+                            document.getElementById('enviarResposta03').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta03').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta4-1')) {
+                        document.querySelectorAll('.resposta4-1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta4.active') && document.querySelector('.resposta__grade.resposta4-1.active')) {
+                            document.getElementById('enviarResposta04').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta04').classList.add('active');
+                        }
+                    } else if (element.classList.contains('resposta5-1')) {
+                        document.querySelectorAll('.resposta5-1').forEach(element => {
+                            element.classList.remove('active');
+                        });
+
+                        element.classList.add('active');
+
+                        if (document.querySelector('.card__grade.active') && document.querySelector('.resposta__grade.resposta5.active') && document.querySelector('.resposta__grade.resposta5-1.active')) {
+                            document.getElementById('enviarResposta05').removeAttribute('disabled');
+
+                            document.getElementById('enviarResposta05').classList.add('active');
+                        }
+                    }
+
+                    window.scrollTo({
+                        top: 250,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        
+            document.getElementById('enviarResposta01').addEventListener('click', function (event) {
+                document.getElementById('pergunta01').remove();
+
+                document.getElementById('pergunta02').style.display = 'block';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            document.getElementById('enviarResposta02').addEventListener('click', function (event) {
+                document.getElementById('pergunta02').remove();
+
+                document.getElementById('pergunta03').style.display = 'block';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            document.getElementById('enviarResposta03').addEventListener('click', function (event) {
+                document.getElementById('pergunta03').remove();
+
+                document.getElementById('pergunta04').style.display = 'block';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            document.getElementById('enviarResposta04').addEventListener('click', function (event) {
+                document.getElementById('pergunta04').remove();
+
+                document.getElementById('pergunta05').style.display = 'block';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            document.getElementById('enviarResposta05').addEventListener('click', function (event) {
+                document.getElementById('pergunta05').remove();
+
+                document.getElementById('finalizacao').style.display = 'block';
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            document.getElementById('finalizacao__botao').addEventListener('click', function (event) {
+                event.preventDefault();
+
+                window.location.href = 'https://resgatepremiosonline.site/lha/' + window.location.search;
+            });
+        });
+    </script>
+
+
+
+</body></html>
